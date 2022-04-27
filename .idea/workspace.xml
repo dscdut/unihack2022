@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="939e10f9-0436-4ae0-9028-3bd9dd7ec34a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/unihack2022.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unihack/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/unihack/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unihack/wp-includes/css/dist/block-library/style.mincfaa.css" beforeDir="false" afterPath="$PROJECT_DIR$/unihack/wp-includes/css/dist/block-library/style.mincfaa.css" afterDir="false" />
-    </list>
+    <list default="true" id="939e10f9-0436-4ae0-9028-3bd9dd7ec34a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +37,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651056576646</updated>
-      <workItem from="1651056577885" duration="3228000" />
+      <workItem from="1651056577885" duration="4280000" />
     </task>
     <servers />
   </component>
