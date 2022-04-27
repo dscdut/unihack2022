@@ -3965,7 +3965,7 @@ ul ul .submenu-controll-fullscreen {
 
 .ui-title-inner-2 {
 
-  margin-bottom: 37px;
+  margin-bottom: 20px;
 
   font: 700 22px/1.455 Montserrat;
 
@@ -3973,7 +3973,14 @@ ul ul .submenu-controll-fullscreen {
 
 }
 
-
+.vc_btn3.vc_btn3-color-grey {
+  background-color: #06adfa !important;
+  color: white !important;
+  font-weight: 700 !important;
+}
+.vc_btn3.vc_btn3-color-grey:hover {
+  background-color: #0a94d4 !important
+}
 
 .ui-title-bg {
 
@@ -6532,6 +6539,7 @@ blockquote cite {
 .b-advantages-1 .b-advantages__info {
 
   margin-bottom: 17px;
+  text-align: left;
 
 }
 
@@ -14886,10 +14894,34 @@ transform: rotate(360deg);
   background-color: #06adfa;
 
 }
+/* custom CSS */
 .flexdiv {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+}
+.flexdiv-near {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.square-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.square-gray {
+  background-color: #eeeeee;
+  width: 260px;
+  height: 260px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #111;
+  text-align: center;
 }
 img.small-logo {
   width: 50px;
@@ -14899,6 +14931,25 @@ img.small-logo {
 .white-link {
   color: white;
   font-size: 14px;
+}
+.gradientDiv {
+  background-image: linear-gradient(to right, #06adfa, #4287f5);
+  padding: 25px 20px;
+  margin-left: 20px;
+}
+.greenLine {
+  background-color: #42f572;
+  height: 5px;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 35px;
+}
+.ontop-icon {
+  font-size: 50px;
+  position: absolute;
+  top: -20px;
+  left: 20px;
 }
 
 .widget ul {
