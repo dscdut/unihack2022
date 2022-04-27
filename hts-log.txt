@@ -1,0 +1,139 @@
+HTTrack3.49-2+libhtsjava.so.2 launched on Wed, 27 Apr 2022 00:58:51 at https://www.pulse.vn/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/*
+(webhttrack -q -%i -w https://www.pulse.vn/ -O "/home/yuu/websites/unihack" -n -%P -N0 -s2 -p7 -D -a -K0 -c4 -%k -A25000 -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -%s -%u )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+01:00:56	Error: 	"Method Not Allowed" (405) at link https://www.pulse.vn/xmlrpc.php (from https://www.pulse.vn/)
+01:00:56	Error: 	"Not Found" (404) at link https://www.pulse.vn/vi/home-tieng-viet/ (from https://www.pulse.vn/)
+01:00:57	Warning: 	Link s.w.org/ not scanned (follow robots meta tag)
+01:00:57	Error: 	"Not Found" (404) at link https://www.pulse.vn/comments/feed/ (from https://www.pulse.vn/)
+01:00:57	Warning: 	File not parsed, looks like binary: https://www.pulse.vn/wp-content/plugins/master-slider/public/assets/css/common/grabbing.cur
+01:00:57	Warning: 	File not parsed, looks like binary: https://www.pulse.vn/wp-content/plugins/master-slider/public/assets/css/common/grab.cur
+01:03:16	Error: 	"Not Found" (404) at link https://www.pulse.vn/sponsorship (from https://www.pulse.vn/)
+01:03:33	Warning: 	Moved Permanently for https://www.pulse.vn/?p=236
+01:03:33	Warning: 	File has moved from https://www.pulse.vn/?p=236 to https://www.pulse.vn/about/
+01:03:33	Warning: 	Moved Permanently for https://www.pulse.vn/?p=198
+01:03:33	Warning: 	File has moved from https://www.pulse.vn/?p=198 to https://www.pulse.vn/services/
+01:03:34	Warning: 	Moved Permanently for https://www.pulse.vn/?p=173
+01:03:34	Warning: 	File has moved from https://www.pulse.vn/?p=173 to https://www.pulse.vn/events/
+01:03:34	Warning: 	Moved Permanently for https://www.pulse.vn/?p=1260
+01:03:34	Warning: 	File has moved from https://www.pulse.vn/?p=1260 to https://www.pulse.vn/case-study/
+01:03:49	Warning: 	Moved Permanently for https://www.pulse.vn/?p=496
+01:03:49	Warning: 	File has moved from https://www.pulse.vn/?p=496 to https://www.pulse.vn/artists/
+01:03:49	Warning: 	Moved Permanently for https://www.pulse.vn/?p=1439
+01:03:49	Warning: 	File has moved from https://www.pulse.vn/?p=1439 to https://www.pulse.vn/positive/
+01:03:49	Warning: 	Moved Permanently for https://www.pulse.vn/?p=358
+01:03:49	Warning: 	File has moved from https://www.pulse.vn/?p=358 to https://www.pulse.vn/partnership/
+01:03:49	Warning: 	Moved Permanently for https://www.pulse.vn/?p=360
+01:03:49	Warning: 	File has moved from https://www.pulse.vn/?p=360 to https://www.pulse.vn/jobs/
+01:05:38	Warning: 	Moved Permanently for https://www.pulse.vn/?p=21
+01:05:38	Warning: 	File has moved from https://www.pulse.vn/?p=21 to https://www.pulse.vn/contact-us/
+01:05:38	Warning: 	Moved Permanently for https://www.pulse.vn/?p=1742
+01:05:38	Warning: 	File has moved from https://www.pulse.vn/?p=1742 to https://www.pulse.vn/salonpas-japanese-pharmaceutical-brand-becomes-title-sponsor-of-hcmc-marathon-for-the-next-3-years-2021-2023-2/
+01:05:44	Warning: 	Moved Permanently for https://www.pulse.vn/?p=1734
+01:05:44	Warning: 	File has moved from https://www.pulse.vn/?p=1734 to https://www.pulse.vn/salonpas-hcmc-marathon-is-now-back-and-available-for-registration/
+01:05:44	Warning: 	Moved Permanently for https://www.pulse.vn/?p=1094
+01:05:44	Warning: 	File has moved from https://www.pulse.vn/?p=1094 to https://www.pulse.vn/ippgroup-challenge-vietnam-won-the-best-overall-race-long-course-by-asiatri/
+01:05:44	Warning: 	Moved Permanently for https://www.pulse.vn/?p=1316
+01:05:44	Warning: 	File has moved from https://www.pulse.vn/?p=1316 to https://www.pulse.vn/case-study-lavie-color-me-run/
+01:05:44	Warning: 	Moved Permanently for https://www.pulse.vn/?p=1367
+01:05:44	Warning: 	File has moved from https://www.pulse.vn/?p=1367 to https://www.pulse.vn/case-study-manulife-danang-international-marathon/
+01:05:44	Warning: 	Moved Permanently for https://www.pulse.vn/?p=1393
+01:05:44	Warning: 	File has moved from https://www.pulse.vn/?p=1393 to https://www.pulse.vn/case-study-hcmc-marathon-powered-by-taiwan-excellence/
+01:05:44	Warning: 	Moved Permanently for https://www.pulse.vn/?p=649
+01:05:44	Warning: 	File has moved from https://www.pulse.vn/?p=649 to https://www.pulse.vn/color-me-run-how-did-it-start/
+01:05:44	Warning: 	Moved Permanently for https://www.pulse.vn/?p=1
+01:05:44	Warning: 	File has moved from https://www.pulse.vn/?p=1 to https://www.pulse.vn/hcmc-marathon-january-2019/
+01:05:47	Warning: 	Moved Permanently for https://www.pulse.vn/?p=653
+01:05:47	Warning: 	File has moved from https://www.pulse.vn/?p=653 to https://www.pulse.vn/tiep-noi-truyen-thong-cua-marathon-tp-ho-chi-minh-lan-thu-vi-2019/
+01:05:48	Warning: 	Moved Permanently for https://www.pulse.vn/?p=1077
+01:05:48	Warning: 	File has moved from https://www.pulse.vn/?p=1077 to https://www.pulse.vn/2019-national-tourism-year-ends-with-flying-colours/
+01:05:48	Warning: 	Moved Permanently for https://www.pulse.vn/?p=917
+01:05:48	Warning: 	File has moved from https://www.pulse.vn/?p=917 to https://www.pulse.vn/pulse-active-brings-the-first-of-more-to-come-k-pop-concerts-of-lotte-duty-free-sm-entertainment/
+01:05:48	Warning: 	Moved Permanently for https://www.pulse.vn/?p=1034
+01:05:48	Warning: 	File has moved from https://www.pulse.vn/?p=1034 to https://www.pulse.vn/nhung-nguoi-hung-tham-lang-tao-nen-su-thanh-cong-cua-manulife-danang-international-marathon/
+01:05:48	Warning: 	Moved Permanently for https://www.pulse.vn/?p=1028
+01:05:48	Warning: 	File has moved from https://www.pulse.vn/?p=1028 to https://www.pulse.vn/manulife-danang-international-marathon-2019-draws-over-9000-runners/
+01:05:48	Warning: 	Moved Permanently for https://www.pulse.vn/?p=1018
+01:05:48	Warning: 	File has moved from https://www.pulse.vn/?p=1018 to https://www.pulse.vn/tai-sao-ngay-cang-nhieu-cong-ty-ep-nhan-vien-tham-gia-cac-giai-chay/
+01:05:48	Warning: 	Moved Permanently for https://www.pulse.vn/?p=1528
+01:05:48	Warning: 	File has moved from https://www.pulse.vn/?p=1528 to https://www.pulse.vn/chay-ao-cung-manulife-danang-international-marathon-quyen-tien-chong-covid-19/
+01:05:48	Warning: 	Moved Permanently for https://www.pulse.vn/?p=1511
+01:05:48	Warning: 	File has moved from https://www.pulse.vn/?p=1511 to https://www.pulse.vn/giai-marathon-quoc-te-da-nang-2020/
+01:05:48	Warning: 	Moved Permanently for https://www.pulse.vn/?p=1532
+01:05:48	Warning: 	File has moved from https://www.pulse.vn/?p=1532 to https://www.pulse.vn/kham-pha-da-nang-qua-chay-bo/
+01:05:48	Warning: 	Moved Permanently for https://www.pulse.vn/?p=1521
+01:05:48	Warning: 	File has moved from https://www.pulse.vn/?p=1521 to https://www.pulse.vn/manulife-danang-international-marathon-to-take-place-in-august/
+01:05:48	Warning: 	Moved Permanently for https://www.pulse.vn/?p=1198
+01:05:48	Warning: 	File has moved from https://www.pulse.vn/?p=1198 to https://www.pulse.vn/hcmc-marathon-2020-powered-by-taiwan-excellence-drew-a-new-highlight-to-start-the-new-decade/
+01:05:49	Warning: 	HTML file (46197 bytes) retransferred due to lack of cache: https://www.pulse.vn/comments/feed/
+01:05:49	Warning: 	HTML file (107739 bytes) retransferred due to lack of cache: https://www.pulse.vn/wp-json/
+01:05:50	Error: 	"Not Found" (404) at link https://www.pulse.vn/comments/feed/ (from https://www.pulse.vn/)
+01:06:30	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.pulse.vn/wp-content/uploads/2021/03/JD_Senior-MKT.pdf
+01:06:30	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.pulse.vn/wp-content/uploads/2021/12/Internship-program.pdf
+01:06:30	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.pulse.vn/wp-content/uploads/2021/07/JD-Senior-Event-Planner.pdf
+01:07:00	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://znews-photo.zadn.vn/w660/Uploaded/wyhktpu/2020_05_25/image001_2.jpg
+01:07:00	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://znews-photo.zadn.vn/w660/Uploaded/wyhktpu/2020_05_25/image003_2.jpg
+01:07:00	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://znews-photo.zadn.vn/w660/Uploaded/wyhktpu/2020_05_25/image005_1.jpg
+01:07:06	Warning: 	HTML file (45944 bytes) retransferred due to lack of cache: https://www.pulse.vn/category/sports/feed/
+01:07:06	Warning: 	HTML file (19495 bytes) retransferred due to lack of cache: https://www.pulse.vn/category/entertainment/feed/
+01:07:07	Warning: 	HTML file (1310 bytes) retransferred due to lack of cache: https://www.pulse.vn/category/international-artists/feed/
+01:07:07	Warning: 	HTML file (1286 bytes) retransferred due to lack of cache: https://www.pulse.vn/category/local-artists/feed/
+01:07:08	Warning: 	HTML file (45950 bytes) retransferred due to lack of cache: https://www.pulse.vn/category/marathon/feed/
+01:07:08	Warning: 	HTML file (53531 bytes) retransferred due to lack of cache: https://www.pulse.vn/category/uncategorized/feed/
+01:07:10	Warning: 	HTML file (6328 bytes) retransferred due to lack of cache: https://www.pulse.vn/tag/full-marathon/feed/
+01:07:11	Warning: 	HTML file (12111 bytes) retransferred due to lack of cache: https://www.pulse.vn/tag/marathon/feed/
+01:07:11	Warning: 	HTML file (6310 bytes) retransferred due to lack of cache: https://www.pulse.vn/tag/running/feed/
+01:07:11	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.pulse.vn/wp-content/plugins/mega-addons-for-visual-composer/css/font-awesome/webfonts/fa-brands-400.eot
+01:07:13	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.pulse.vn/wp-content/plugins/mega-addons-for-visual-composer/css/font-awesome/webfonts/fa-brands-400.eot?
+01:07:13	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.pulse.vn/wp-content/plugins/mega-addons-for-visual-composer/css/font-awesome/webfonts/fa-brands-400.woff2
+01:07:13	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.pulse.vn/wp-content/plugins/mega-addons-for-visual-composer/css/font-awesome/webfonts/fa-brands-400.woff
+01:07:13	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.pulse.vn/wp-content/plugins/mega-addons-for-visual-composer/css/font-awesome/webfonts/fa-brands-400.ttf
+01:07:16	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.pulse.vn/wp-content/plugins/mega-addons-for-visual-composer/css/font-awesome/webfonts/fa-solid-900.eot
+01:07:18	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.pulse.vn/wp-content/plugins/mega-addons-for-visual-composer/css/font-awesome/webfonts/fa-solid-900.eot?
+01:07:18	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.pulse.vn/wp-content/plugins/mega-addons-for-visual-composer/css/font-awesome/webfonts/fa-solid-900.woff
+01:07:18	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.pulse.vn/wp-content/plugins/mega-addons-for-visual-composer/css/font-awesome/webfonts/fa-solid-900.woff2
+01:07:20	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.pulse.vn/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0
+01:07:20	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.pulse.vn/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0
+01:07:20	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.pulse.vn/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.eot?
+01:07:20	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.pulse.vn/wp-content/plugins/mega-addons-for-visual-composer/css/font-awesome/webfonts/fa-solid-900.ttf
+01:07:22	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.pulse.vn/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0
+01:07:22	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.pulse.vn/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0
+01:08:55	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://www.pulse.vn/)
+01:08:57	Warning: 	HTML file (46197 bytes) retransferred due to lack of cache: https://www.pulse.vn/sponsorship
+01:08:58	Error: 	"Not Found" (404) at link https://www.pulse.vn/sponsorship (from https://www.pulse.vn/)
+01:08:58	Warning: 	HTML file (65082 bytes) retransferred due to lack of cache: https://www.pulse.vn/salonpas-japanese-pharmaceutical-brand-becomes-title-sponsor-of-hcmc-marathon-for-the-next-3-years-2021-2023-2/
+01:08:59	Warning: 	HTML file (60614 bytes) retransferred due to lack of cache: https://www.pulse.vn/ippgroup-challenge-vietnam-won-the-best-overall-race-long-course-by-asiatri/
+01:09:52	Warning: 	HTML file (755 bytes) retransferred due to lack of cache: https://www.pulse.vn/?p=173
+01:09:53	Warning: 	Moved Permanently for https://www.pulse.vn/?p=173
+01:09:53	Warning: 	File has moved from https://www.pulse.vn/?p=173 to https://www.pulse.vn/events/
+01:09:54	Warning: 	HTML file (59599 bytes) retransferred due to lack of cache: https://www.pulse.vn/case-study-manulife-danang-international-marathon/
+01:09:55	Warning: 	HTML file (59195 bytes) retransferred due to lack of cache: https://www.pulse.vn/case-study-hcmc-marathon-powered-by-taiwan-excellence/
+01:09:58	Warning: 	HTML file (58178 bytes) retransferred due to lack of cache: https://www.pulse.vn/color-me-run-how-did-it-start/
+01:09:59	Warning: 	HTML file (61930 bytes) retransferred due to lack of cache: https://www.pulse.vn/tiep-noi-truyen-thong-cua-marathon-tp-ho-chi-minh-lan-thu-vi-2019/
+01:10:00	Warning: 	HTML file (59345 bytes) retransferred due to lack of cache: https://www.pulse.vn/2019-national-tourism-year-ends-with-flying-colours/
+01:10:01	Warning: 	HTML file (65629 bytes) retransferred due to lack of cache: https://www.pulse.vn/pulse-active-brings-the-first-of-more-to-come-k-pop-concerts-of-lotte-duty-free-sm-entertainment/
+01:10:02	Warning: 	HTML file (70918 bytes) retransferred due to lack of cache: https://www.pulse.vn/nhung-nguoi-hung-tham-lang-tao-nen-su-thanh-cong-cua-manulife-danang-international-marathon/
+01:10:03	Warning: 	HTML file (59096 bytes) retransferred due to lack of cache: https://www.pulse.vn/manulife-danang-international-marathon-2019-draws-over-9000-runners/
+01:10:04	Warning: 	HTML file (63083 bytes) retransferred due to lack of cache: https://www.pulse.vn/tai-sao-ngay-cang-nhieu-cong-ty-ep-nhan-vien-tham-gia-cac-giai-chay/
+01:10:05	Warning: 	HTML file (60496 bytes) retransferred due to lack of cache: https://www.pulse.vn/giai-marathon-quoc-te-da-nang-2020/
+01:10:06	Warning: 	HTML file (69559 bytes) retransferred due to lack of cache: https://www.pulse.vn/hcmc-marathon-2020-powered-by-taiwan-excellence-drew-a-new-highlight-to-start-the-new-decade/
+01:10:16	Error: 	"Not Found" (404) at link https://www.pulse.vn/wp-content/uploads/2020/02/TE2.png (from https://www.pulse.vn/hcmc-marathon-2020-powered-by-taiwan-excellence-drew-a-new-highlight-to-start-the-new-decade/)
+01:10:25	Error: 	"Not Found" (404) at link https://www.pulse.vn/wp-content/themes/united/css/images/loading.png (from https://www.pulse.vn/wp-content/themes/united/css/style.css?ver=5.7.6)
+01:10:25	Error: 	"Not Found" (404) at link https://www.pulse.vn/wp-content/themes/img/section-1-demo.jpg (from https://www.pulse.vn/wp-content/themes/united/css/style.css?ver=5.7.6)
+01:10:25	Error: 	"Not Found" (404) at link https://www.pulse.vn/wp-content/themes/united/css/images/openhand.cur (from https://www.pulse.vn/wp-content/themes/united/css/style.css?ver=5.7.6)
+01:10:25	Error: 	"Not Found" (404) at link https://www.pulse.vn/wp-content/themes/united/css/images/closedhand.cur (from https://www.pulse.vn/wp-content/themes/united/css/style.css?ver=5.7.6)
+01:10:25	Error: 	"Not Found" (404) at link https://www.pulse.vn/Trident/ (from https://www.pulse.vn/wp-content/plugins/smart-slider-3/Public/SmartSlider3/Application/Frontend/Assets/dist/n2.min.js?ver=70fceec4)
+01:10:25	Warning: 	Retry after error 504 (Gateway Time-out) at link a.vimeocdn.com/js/froogaloop2.min.js (from https://www.pulse.vn/wp-content/plugins/themes1-united-core/slider/js/jquery.sliderPro.min.js?ver=1.0)
+01:10:25	Error: 	"Not Found" (404) at link https://www.pulse.vn/slidebar-1 (from https://www.pulse.vn/wp-content/themes/united/js/header.js?ver=1.0)
+01:10:25	Error: 	"Not Found" (404) at link https://www.pulse.vn/Popover requires tooltip.js (from https://www.pulse.vn/wp-content/themes/united/js/bootstrap/bootstrap.js?ver=1.0)
+01:10:25	Error: 	"Not Found" (404) at link https://www.pulse.vn/youtu.be/ (from https://www.pulse.vn/wp-content/plugins/js_composer/assets/lib/prettyphoto/js/jquery.prettyPhoto.min.js?ver=5.4.7)
+01:10:25	Error: 	"Not Found" (404) at link https://www.pulse.vn/partnership/GET (from https://www.pulse.vn/wp-content/plugins/js_composer/assets/js/dist/vc_grid.min.js?ver=5.4.7)
+01:10:26	Warning: 	Retry after error 504 () at link a.vimeocdn.com/js/froogaloop2.min.js (from https://www.pulse.vn/wp-content/plugins/themes1-united-core/slider/js/jquery.sliderPro.min.js?ver=1.0)
+01:10:26	Error: 	"" (504) after 2 retries at link a.vimeocdn.com/js/froogaloop2.min.js (from https://www.pulse.vn/wp-content/plugins/themes1-united-core/slider/js/jquery.sliderPro.min.js?ver=1.0)
+
+HTTrack Website Copier/3.49-2 mirror complete in 11 minutes 35 seconds : 681 links scanned, 678 files written (73054223 bytes overall) [63953450 bytes received at 92019 bytes/sec], 48204584 bytes transferred using HTTP compression in 316 files, ratio 80%, 6.6 requests per connection
+(18 errors, 110 warnings, 0 messages)
