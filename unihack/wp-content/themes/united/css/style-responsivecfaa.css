@@ -371,6 +371,7 @@
     }
     .footer {
         margin-bottom: 0;
+        padding: 0;
     }
     .b-works-details__description dt {
         width: 100%;

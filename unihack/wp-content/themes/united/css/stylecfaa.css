@@ -3916,11 +3916,12 @@ ul ul .submenu-controll-fullscreen {
 
   margin-top: 0;
 
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  margin-left: 5px;
 
   padding-bottom: 13px;
 
-  font: italic 400 14px/1 Montserrat;
+  font:  400 14px/1 Montserrat;
 
   text-align: right;
 
@@ -12612,8 +12613,6 @@ a.sp-video:after {
 
 .footer {
 
-  margin-bottom: 50px;
-
   padding-top: 32px;
 
   font-size: 12px;
@@ -14806,12 +14805,13 @@ transform: rotate(360deg);
 
 }
 
-
+.section-social-net {
+  margin: 10px;
+}
 
 .section-social-net .ui-title-block {
-
-  padding-left: 58px;
-
+  color: white !important;
+  text-align: left;
 }
 
 
@@ -14821,7 +14821,7 @@ transform: rotate(360deg);
   position: relative;
 
   z-index: 100;
-
+  
   margin-top: 50px;
 
   margin-bottom: -10px;
@@ -14833,7 +14833,16 @@ transform: rotate(360deg);
 .section-social-net__item {
 
   vertical-align: top;
+  margin-bottom: 15px;
+  width: 190px;
+  text-align: center;
 
+}
+.section-social-net__item-long {
+  vertical-align: top;
+  margin-bottom: 15px;
+  width: 400px;
+  text-align: center;
 }
 
 
@@ -14856,7 +14865,7 @@ transform: rotate(360deg);
 
   text-transform: uppercase;
 
-  color: #777;
+  color: #111;
 
   background-color: #eee;
 
@@ -14872,13 +14881,25 @@ transform: rotate(360deg);
 
   padding-bottom: 20px;
 
-  color: #333;
+  color: white;
 
-  background-color: #e0e242;
+  background-color: #06adfa;
 
 }
-
-
+.flexdiv {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+img.small-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+.white-link {
+  color: white;
+  font-size: 14px;
+}
 
 .widget ul {
 
