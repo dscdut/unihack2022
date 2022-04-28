@@ -14913,7 +14913,7 @@ transform: rotate(360deg);
 }
 .square-gray {
   background-color: #eeeeee;
-  width: 260px;
+  width: 40%;
   height: 260px;
   margin: 20px;
   display: flex;
@@ -14975,6 +14975,7 @@ img.small-logo {
 .white-link {
   color: white;
   font-size: 14px;
+  transition: 0.3s;
 }
 .gradientDiv {
   background-image: linear-gradient(to right, #06adfa, #4287f5);
@@ -14994,6 +14995,12 @@ img.small-logo {
   position: absolute;
   top: -20px;
   left: 20px;
+}
+.icon-hover {
+  transition: 0.3s ease-in-out;
+}
+.icon-hover:hover {
+  transform: scale(1.15);
 }
 
 .widget ul {
