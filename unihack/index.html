@@ -673,29 +673,6 @@
 
  <!-- Header -->
  <!-- ==========================-->
- <!-- SEARCH MODAL-->
- <!-- ==========================-->
- <div class="header-search open-search">
-  <div class="container">
-   <div class="row">
-    <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-     <div class="navbar-search">
-      <form class="search-global" action="https://www.pulse.vn/">
-       <input class="search-global__input" type="text" placeholder="Type to search" autocomplete="off" name="s"
-        value="" />
-       <button class="search-global__btn"><i class="icon stroke icon-Search"></i>
-       </button>
-       <div class="search-global__note">Begin typing your search above and press return to search.
-       </div>
-      </form>
-     </div>
-    </div>
-   </div>
-  </div>
-  <button class="search-close close" type="button"><i class="fa fa-times"></i>
-  </button>
- </div>
- <!-- ==========================-->
  <!-- MOBILE MENU-->
  <!-- ==========================-->
  <div data-off-canvas="mobile-slidebar left overlay">
@@ -843,7 +820,7 @@
  </div>
 
 
-
+<!-- header here!-->
  <header
   class="header header-topbar-hidden header-boxed-width navbar-fixed-top header-background-trans header-navibox-1-left header-navibox-2-right">
   <div class="container container-boxed-width">
@@ -940,6 +917,16 @@
   <!--do not delete this div-->
  </div>
  <!-- end .header-->
+
+<!-- Video background here--> 
+<div class="video-bg">
+  <video autoplay loop muted plays-inline class="back-video">
+    <source src="/wp-content/uploads/GDSC - DUT's Products 2019 - 2021.mp4" type="video/mp4">  
+  </video>
+  <div class="content" style="font-weight: 500;font-size: 8em; margin-top: 200px; text-align: center; color: gray;">
+  UNIHACK2022
+    </div>
+</div>
  <div class="l-theme">
 
   <div class="main-wrapper">
@@ -952,283 +939,8 @@
     <!--do not delete this div-->
    </div>
 
-   <div class="l-main-content">
-    <div id="the1_mainslider__inner">
-     <div class="n2-section-smartslider fitvidsignore " role="region" aria-label="Slider">
-      <style>
-       div#n2-ss-2 {
-        width: 1280px;
-       }
-
-       div#n2-ss-2 .n2-ss-slider-1 {
-        position: relative;
-       }
-
-       div#n2-ss-2 .n2-ss-slider-background-video-container {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-       }
-
-       div#n2-ss-2 .n2-ss-slider-2 {
-        position: relative;
-        overflow: hidden;
-        padding: 0px 0px 0px 0px;
-        height: 720px;
-        border: 0px solid RGBA(62, 62, 62, 1);
-        border-radius: 0px;
-        background-clip: padding-box;
-        background-repeat: repeat;
-        background-position: 50% 50%;
-        background-size: cover;
-        background-attachment: scroll;
-       }
-
-       div#n2-ss-2.n2-ss-mobileLandscape .n2-ss-slider-2,
-       div#n2-ss-2.n2-ss-mobilePortrait .n2-ss-slider-2 {
-        background-attachment: scroll;
-       }
-
-       div#n2-ss-2 .n2-ss-slider-3 {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        outline: 1px solid rgba(0, 0, 0, 0);
-        z-index: 10;
-       }
-
-       div#n2-ss-2 .n2-ss-slide-backgrounds,
-       div#n2-ss-2 .n2-ss-slider-3>.n-particles-js-canvas-el,
-       div#n2-ss-2 .n2-ss-slider-3>.n2-ss-divider {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-       }
-
-       div#n2-ss-2 .n2-ss-slide-backgrounds {
-        z-index: 10;
-       }
-
-       div#n2-ss-2 .n2-ss-slider-3>.n-particles-js-canvas-el {
-        z-index: 12;
-       }
-
-       div#n2-ss-2 .n2-ss-slide-backgrounds>* {
-        overflow: hidden;
-       }
-
-       div#n2-ss-2 .n2-ss-slide {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 20;
-        display: block;
-        -webkit-backface-visibility: hidden;
-       }
-
-       div#n2-ss-2 .n2-ss-layers-container {
-        position: relative;
-        width: 1280px;
-        height: 720px;
-       }
-
-       div#n2-ss-2 .n2-ss-parallax-clip>.n2-ss-layers-container {
-        position: absolute;
-        right: 0;
-       }
-
-       div#n2-ss-2 .n2-ss-slide {
-        perspective: 1500px;
-       }
-
-       div#n2-ss-2[data-ie] .n2-ss-slide {
-        perspective: none;
-        transform: perspective(1500px);
-       }
-
-       div#n2-ss-2 .n2-ss-slide-active {
-        z-index: 21;
-       }
-
-       div#n2-ss-2 .nextend-autoplay {
-        cursor: pointer;
-        z-index: 10;
-        line-height: 1;
-       }
-
-       div#n2-ss-2 .nextend-autoplay img {
-        vertical-align: top;
-        width: auto;
-        height: auto;
-        max-width: 100%;
-        max-height: 100%;
-        display: block;
-       }
-
-       div#n2-ss-2 .nextend-autoplay .nextend-autoplay-play {
-        display: none;
-       }
-
-       div#n2-ss-2 .nextend-autoplay.n2-autoplay-paused .nextend-autoplay-play {
-        display: block;
-       }
-
-       div#n2-ss-2 .nextend-autoplay.n2-autoplay-paused .nextend-autoplay-pause {
-        display: none;
-       }
-
-       div#n2-ss-2 .n2-font-45a3566fdbe396ee1f8dcaf9bda4bd57-hover {
-        font-family: 'Montserrat';
-        color: #ffffff;
-        font-size: 468.75%;
-        text-shadow: none;
-        line-height: 2;
-        font-weight: normal;
-        font-style: normal;
-        text-decoration: none;
-        text-align: center;
-        letter-spacing: normal;
-        word-spacing: normal;
-        text-transform: none;
-        font-weight: 900;
-       }
-
-       div#n2-ss-2 .n2-font-45a3566fdbe396ee1f8dcaf9bda4bd57-hover:HOVER,
-       div#n2-ss-2 .n2-font-45a3566fdbe396ee1f8dcaf9bda4bd57-hover:ACTIVE,
-       div#n2-ss-2 .n2-font-45a3566fdbe396ee1f8dcaf9bda4bd57-hover:FOCUS {
-        color: #ffffff;
-        font-family: 'Montserrat';
-       }
-
-       div#n2-ss-2 .n2-style-5a9c157011c4158256a9beb5a715302e-heading {
-        background: RGBA(255, 255, 255, 0);
-        opacity: 0.75;
-        padding: 10px 0px 0px 0px;
-        box-shadow: none;
-        border-width: 0px;
-        border-style: solid;
-        border-color: #000000;
-        border-color: RGBA(0, 0, 0, 1);
-        border-radius: 0px;
-       }
-
-       div#n2-ss-2 .n2-style-443724b8a6c075089f509b7087c2ee39-heading {
-        background: RGBA(0, 0, 0, 0.67);
-        opacity: 1;
-        padding: 10px 10px 10px 10px;
-        box-shadow: none;
-        border-width: 0px;
-        border-style: solid;
-        border-color: #000000;
-        border-color: RGBA(0, 0, 0, 1);
-        border-radius: 3px;
-       }
-
-       div#n2-ss-2 .n2-style-443724b8a6c075089f509b7087c2ee39-heading:Hover,
-       div#n2-ss-2 .n2-style-443724b8a6c075089f509b7087c2ee39-heading:ACTIVE,
-       div#n2-ss-2 .n2-style-443724b8a6c075089f509b7087c2ee39-heading:FOCUS {
-        background: RGBA(0, 0, 0, 0.67);
-       }
-      </style>
-      <div id="n2-ss-2-align" class="n2-ss-align">
-       <div class="n2-padding">
-        <div id="n2-ss-2" data-creator="Smart Slider 3"
-         class="n2-ss-slider n2-ow n2-has-hover n2notransition  n2-ss-load-fade " style="font-size: 1rem;"
-         data-fontsize="16">
-         <div class="n2-ss-slider-1 n2_ss__touch_element n2-ow" style="">
-          <div class="n2-ss-slider-2 n2-ow" style="">
-           <div class="n2-ss-slider-3 n2-ow" style="">
-
-            <div class="n2-ss-slide-backgrounds"></div>
-            <div data-first="1" data-slide-duration="0" data-id="4" style=""
-             class=" n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-4">
-             <div class="n2-ss-slide-background n2-ow" data-mode="fit"></div>
-             <div class="n2-ss-layers-container n2-ow">
-              <div class="n2-ss-layer n2-ow" style="padding:0px 0px 0px 0px;"
-               data-desktopportraitpadding="0|*|0|*|0|*|0" data-sstype="slide" data-csstextalign="center"
-               data-pm="default">
-               <div class="n2-ss-layer n2-ow n2-ss-layer--need-width"
-                style="left:0px;top:0px;width:100%;height:100%;overflow:visible;" data-pm="absolute"
-                data-responsiveposition="1" data-desktopportraitleft="0" data-desktopportraittop="0"
-                data-responsivesize="1" data-desktopportraitwidth="100%" data-desktopportraitheight="100%"
-                data-desktopportraitalign="left" data-desktopportraitvalign="top" data-parentid=""
-                data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-sstype="layer"
-                data-rotation="0" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1"
-                data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-adaptivefont="0"
-                data-desktopportraitfontsize="100" data-plugin="rendered">
-                <div id="n2-ss-2item1" class="n2_ss_video_player n2-ss-item-content n2-ow-all" data-aspect-ratio="fill">
-                 <div class="n2_ss_video_player__placeholder"></div>
-                 <div id="n2-ss-2item1-frame"></div>
-                 <div class="n2_ss_video_player__cover"
-                  style="cursor:pointer; background: URL(wp-content/uploads/2019/05/Captura-de-pantalla-2019-05-27-a-las-16.47.13.png) no-repeat 50% 50%; background-size: cover">
-                 </div>
-                </div>
-               </div>
-               <div class="n2-ss-layer n2-ow n2-ss-layer--need-width"
-                style="inset: 0px auto auto 0px; width: 100%; height: 100%; overflow: visible; font-size: 100%;"
-                data-pm="absolute" data-responsiveposition="1" data-desktopportraitleft="0" data-desktopportraittop="0"
-                data-responsivesize="1" data-desktopportraitwidth="100%" data-desktopportraitheight="100%"
-                data-desktopportraitalign="left" data-desktopportraitvalign="top" data-parentid=""
-                data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-sstype="layer"
-                data-rotation="0" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1"
-                data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-adaptivefont="0"
-                data-desktopportraitfontsize="100" data-plugin="rendered">
-                <div id="n2-ss-2item1" class="n2_ss_video_player n2-ss-item-content n2-ow-all" data-aspect-ratio="fill">
-                 <div class="n2_ss_video_player__placeholder"></div>
-                 <iframe id="n2-ss-2item1-frame" frameborder="0" allowfullscreen="1"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  title="YouTube video player" width="640" height="360"
-                  src="https://www.youtube.com/embed/gtTPNJUEX9g?enablejsapi=1&amp;origin=http%3A%2F%2F127.0.0.1%3A5500&amp;wmode=opaque&amp;rel=1&amp;start=0&amp;end=0&amp;modestbranding=1&amp;playsinline=0&amp;autohide=1&amp;controls=0&amp;widgetid=1"></iframe>
-
-                </div>
-               </div>
-              </div>
-             </div>
-            </div>
-           </div>
-          </div>
-          <div data-ssright="0+15" data-sstop="0+15"
-           class="n2-ss-widget n2-ss-widget-display-hover n2-style-443724b8a6c075089f509b7087c2ee39-heading nextend-autoplay n2-ow nextend-autoplay-image n2-ib"
-           style="position: absolute;" role="button" aria-label="Pause autoplay" tabindex="0"><img
-            class="nextend-autoplay-play n2-ow" data-no-lazy="1" data-hack="data-lazy-src"
-            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0xMS41OCA3LjAzTDUuMzAyIDIuMTY1QzUuMTY1IDIuMDU3IDUuMDE2IDIgNC44NTcgMiA0LjM4NCAyIDQgMi41MDQgNCAzLjEyNXY5Ljc1YzAgLjYyLjM4NCAxLjEyNS44NTcgMS4xMjUuMTYgMCAuMzA4LS4wNTcuNDM2LS4xNTZMMTEuNTggOC45N2MuMjUtLjE5OC40Mi0uNTU4LjQyLS45NyAwLS40MTItLjE3LS43NzMtLjQyLS45N3oiCiAgICAgICAgICBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjgiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPgo8L3N2Zz4="
-            alt="Play" /><img class="nextend-autoplay-pause n2-ow" data-no-lazy="1" data-hack="data-lazy-src"
-            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik00IDJ2MTJoM1YySDR6bTUgMHYxMmgzVjJIOXoiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuOCIgZmlsbC1ydWxlPSJldmVub2RkIi8+Cjwvc3ZnPg=="
-            alt="Pause" /></div>
-         </div>
-        </div>
-        <div id="n2-ss-2-spinner" style="display: none;">
-         <div>
-          <div class="n2-ss-spinner-simple-white-container">
-           <div class="n2-ss-spinner-simple-white"></div>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="n2_clear"></div>
-      <div id="n2-ss-2-placeholder"
-       style="position: relative;z-index:2;background-color:RGBA(0,0,0,0); background-color:RGBA(255,255,255,0);">
-       <img style="width: 100%; max-width:3000px; display: block;opacity:0;margin:0px;" class="n2-ow"
-        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgwIiBoZWlnaHQ9IjcyMCIgPjwvc3ZnPg=="
-        alt="Slider" />
-      </div>
-     </div>
-
-    </div>
-   </div>
+   <!--Main content here-->
    <div class="">
-
-
-
     <div id="main-content" class=" no-sidebar">
 
      <!-- Do stuff... -->
