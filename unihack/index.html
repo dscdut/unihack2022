@@ -873,11 +873,14 @@
 
 <!-- Video background here--> 
 <div class="video-bg">
-  <video autoplay loop muted plays-inline class="back-video">
+  <video class="back-video" id="video_background" preload="true" muted loop>
     <source src="/wp-content/uploads/GDSC - DUT's Products 2019 - 2021.mp4" type="video/mp4">  
   </video>
-  <div class="content" style="font-weight: 500;font-size: 8em; margin-top: 200px; text-align: center; color: gray;">
-  UNIHACK2022
+  <div class="content-before-video" id="content-before-video">
+    <h1 class="ml15">
+      <span class="word">UNIHACK</span>
+      <span class="word">2022</span>
+    </h1>
     </div>
 </div>
  <div class="l-theme">
@@ -1608,6 +1611,9 @@ Trước xu hướng chuyển đổi kỹ thuật số và bước ngoặt thay 
   var the1Globals = { "ajaxUrl": "https:\/\/www.pulse.vn\/wp-admin\/admin-ajax.php" };
 /* ]]> */
  </script>
+ <!-- css word effect-->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+ <script src="/wp-content/themes/united/js/customjs.js"></script>
  <script type='text/javascript' src='wp-content/plugins/themes1-united-core/slider/_frontend5152.js?ver=1.0'
   id='the1_slider-js'></script>
  <script type='text/javascript' src='wp-includes/js/imagesloaded.mineda1.js?ver=4.1.4' id='imagesloaded-js'></script>
