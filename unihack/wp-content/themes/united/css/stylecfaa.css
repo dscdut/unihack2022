@@ -14927,11 +14927,15 @@ transform: rotate(360deg);
   display: inline-block;
   line-height: 1em;
 }
+.padding-medium {
+  margin-top: 50px;
+}
 /* video bg css */
 .video-bg {
   width: 100%;
   height: 100vh;
   font-family: 'Montserrat';
+  margin-bottom: 50px;
 }
 .back-video {
   position: absolute;
