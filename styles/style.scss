@@ -1,6 +1,7 @@
 //* color
 $--color-primary: #0f1020;
 $--color-text: #fff;
+$--color-secondary: #f72585;
 //
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
 * {
@@ -12,7 +13,7 @@ $--color-text: #fff;
 }
 body {
   font-family: "Montserrat", sans-serif;
-  line-height: 1.5;
+  line-height: 1.4;
   font-weight: 300;
   background-color: $--color-primary;
 }
@@ -24,50 +25,71 @@ a {
   text-decoration: none;
   color: $--color-text;
 }
+i,
+li {
+  display: inline-block;
+}
 img {
   width: 100%;
   height: 100%;
 }
+.btn {
+  padding: 1rem 1.2rem;
+  border-radius: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background: $--color-secondary;
+  color: $--color-text;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 8rem;
+  h1 {
+    display: inline-block;
+    color: $--color-text;
+    font-size: 3.6rem;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50%;
+      border-radius: 1.2rem;
+      height: 0.6rem;
+      background: #f72585;
+    }
+  }
+}
 
 .organize {
   margin-bottom: 120rem;
-  &__heading {
-    text-align: center;
-    margin-bottom: 8rem;
-    h1 {
-      display: inline-block;
-      color: $--color-text;
-      font-size: 3.6rem;
-      position: relative;
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -1rem;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 50%;
-        border-radius: 0.6rem;
-        height: 0.4rem;
-        background: #f72585;
-      }
-    }
-  }
+
   &__item {
-    margin: 4rem 0;
-    display: flex;
-    overflow: hidden;
-    height: 29.5rem;
-    align-items: center;
+    margin: 10rem 0;
   }
   &__img {
-    height: 100%;
-    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    img {
+      height: 25.5rem;
+      width: 25.5rem;
+      object-fit: cover;
+    }
   }
   &__body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
     &-desc {
-      font-size: 2.4rem;
+      width: 80%;
+      font-size: 1.8rem;
       font-weight: 500;
       color: $--color-text;
+      margin: 4rem 0;
     }
   }
 }
@@ -75,10 +97,12 @@ img {
 .footer {
   padding: 10rem 0;
   &__title {
-    font-size: 2.8rem;
+    display: inline-block;
+    font-size: 1.6rem;
     font-weight: 500;
-    color: $--color-text;
     position: relative;
+    margin: 6rem 0 3.5rem;
+    color: $--color-text;
     &::after {
       content: "";
       position: absolute;
@@ -90,21 +114,32 @@ img {
     }
   }
   &__social {
-    margin-top: 1rem;
     display: flex;
+    align-items: center;
+    .footer__list-link i {
+      font-size: 2.6rem;
+      margin-right: 1.6rem;
+    }
+  }
+  &__list {
     &-item {
-      display: inline-block;
+      padding: 1rem 0;
     }
     &-link {
-      margin-right: 3.6rem;
-      font-size: 8.4rem;
+      display: flex;
+      align-items: center;
+      font-size: 1.6rem;
+      i {
+        font-size: 1.8rem;
+        margin-right: 1.2rem;
+      }
     }
   }
   &__sponsors {
-    margin-top: 1rem;
     display: flex;
     &-item {
       margin-right: 1.8rem;
+
       font-size: 2.4rem; //test vi k co anh
     }
   }
@@ -116,6 +151,24 @@ img {
       span {
         margin-left: 0.4rem;
       }
+    }
+  }
+}
+
+// Responsive
+
+@media (min-width: 1113px) {
+  .organize {
+    &__body {
+      align-items: flex-start;
+      &-desc {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+  .footer {
+    &__social {
+      justify-content: center;
     }
   }
 }

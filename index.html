@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>UniHack</title>
-    <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="stylesheet" href="./styles/grid.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link
       rel="stylesheet"
@@ -15,58 +15,49 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <script src="https://use.fontawesome.com/6b5e8db946.js"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <section class="organize grid wide">
-      <div class="organize__heading">
+      <div data-aos="fade-up" class="heading">
         <h1>Đơn vị tổ chức</h1>
       </div>
+
       <div class="organize__item row">
-        <div class="organize__img col l-4">
+        <div data-aos="fade-right" class="organize__img col l-3 c-12">
           <img
             src="https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/277226841_3163244097292705_8644606613232152752_n.jpg?_nc_cat=110&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=OypIvzv6_EkAX9rNTZE&_nc_ht=scontent.fdad1-3.fna&oh=00_AT-ZMbIWmfcZq8s_90zABL4RBzGCjV8oc4bpqgAQOxXsyw&oe=627A0FB4"
             alt=""
           />
         </div>
-        <div class="organize__body col l-8">
-          <div class="organize__body-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-            possimus ipsum vel, nemo perspiciatis reiciendis quisquam dolorem
-            esse neque corporis dolorum nulla tempora dolore illum. Neque
-            tempore doorum minus ad?
-          </div>
-        </div>
-      </div>
-      <div class="organize__item row">
-        <div class="organize__img col l-4">
-          <img
-            src="https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/277226841_3163244097292705_8644606613232152752_n.jpg?_nc_cat=110&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=OypIvzv6_EkAX9rNTZE&_nc_ht=scontent.fdad1-3.fna&oh=00_AT-ZMbIWmfcZq8s_90zABL4RBzGCjV8oc4bpqgAQOxXsyw&oe=627A0FB4"
-            alt=""
-          />
-        </div>
-        <div class="organize__body col l-8">
+        <div data-aos="fade-left" class="organize__body col l-9 c-12">
           <div class="organize__body-desc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
             possimus ipsum vel, nemo perspiciatis reiciendis quisquam dolorem
             esse neque corporis dolorum nulla tempora dolore illum. Neque
             tempore dolorum minus ad?
           </div>
+          <div class="organize__body-footer">
+            <a href="#" class="btn organize__btn">Truy cập</a>
+          </div>
         </div>
       </div>
       <div class="organize__item row">
-        <div class="organize__img col l-4">
+        <div data-aos="fade-right" class="organize__img col l-3 c-12">
           <img
             src="https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/277226841_3163244097292705_8644606613232152752_n.jpg?_nc_cat=110&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=OypIvzv6_EkAX9rNTZE&_nc_ht=scontent.fdad1-3.fna&oh=00_AT-ZMbIWmfcZq8s_90zABL4RBzGCjV8oc4bpqgAQOxXsyw&oe=627A0FB4"
             alt=""
           />
         </div>
-        <div class="organize__body col l-8">
+        <div data-aos="fade-left" class="organize__body col l-9 c-12">
           <div class="organize__body-desc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
             possimus ipsum vel, nemo perspiciatis reiciendis quisquam dolorem
             esse neque corporis dolorum nulla tempora dolore illum. Neque
             tempore dolorum minus ad?
+          </div>
+          <div class="organize__body-footer">
+            <a href="#" class="btn organize__btn">Truy cập</a>
           </div>
         </div>
       </div>
@@ -74,36 +65,42 @@
     <footer id="footer" class="footer">
       <div class="grid wide">
         <div class="row">
-          <div class="col l-6">
-            <span class="footer__title">Theo dõi chúng tôi tại</span>
+          <div class="col l-2 m-6">
+            <span data-aos="fade-up" class="footer__title"
+              >Theo dõi chúng tôi tại</span
+            >
             <div class="footer__social">
-              <ul class="footer__social-list">
-                <li class="footer__social-item">
-                  <a class="footer__social-link" href=""
+              <ul data-aos="fade-in" data-aos-delay="400" class="footer__list">
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href=""
                     ><i class="fa-brands fa-facebook"></i
                   ></a>
                 </li>
-                <li class="footer__social-item">
-                  <a class="footer__social-link" href=""
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href=""
                     ><i class="fa-brands fa-instagram"></i
                   ></a>
                 </li>
-                <li class="footer__social-item">
-                  <a class="footer__social-link" href=""
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href=""
                     ><i class="fa-brands fa-linkedin"></i
                   ></a>
                 </li>
-                <li class="footer__social-item">
-                  <a class="footer__social-link" href=""
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href=""
                     ><i class="fa-solid fa-globe"></i
                   ></a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col l-6">
-            <span class="footer__title">Nhà tại trợ</span>
-            <div class="footer__sponsors">
+          <div class="col l-4 m-6">
+            <span data-aos="fade-up" class="footer__title">Nhà tại trợ</span>
+            <div
+              data-aos="fade-in"
+              data-aos-delay="400"
+              class="footer__sponsors"
+            >
               <div class="footer__sponsors-item">
                 <!-- <img src="" alt=""> -->
                 logo
@@ -113,28 +110,40 @@
                 logo
               </div>
             </div>
-            <div class="footer__contact">
-              <a class="footer__contact-item">
-                <i class="fa-solid fa-phone"></i>
-                <span
-                  >Trưởng ban tổ chức: Trần Thị Thùy Duyên (076 277 6422)</span
-                >
-              </a>
-              <a class="footer__contact-item">
-                <i class="fa-solid fa-phone"></i>
-                <span
-                  >Trưởng ban đối ngoại: Nguyễn Thị Minh Châu (0918 819
-                  278)</span
-                >
-              </a>
-              <a class="footer__contact-item">
-                <i class="fa-solid fa-envelope"></i>
-                <span>dsc.dut@gmail.com</span>
-              </a>
-            </div>
+          </div>
+          <div class="col l-6 m-12">
+            <span data-aos="fade-up" class="footer__title">Liên hệ</span>
+
+            <ul data-aos="fade-in" data-aos-delay="400" class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link">
+                  <i class="fa-solid fa-phone"></i>
+                  Trưởng ban tổ chức: Trần Thị Thùy Duyên (076 277 6422)
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link">
+                  <i class="fa-solid fa-phone"></i>
+                  Trưởng ban đối ngoại: Nguyễn Thị Minh Châu (0918 819 278)
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link">
+                  <i class="fa-solid fa-envelope"></i>
+                  dsc.dut@gmail.com
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1300,
+      });
+    </script>
   </body>
 </html>
