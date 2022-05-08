@@ -5,6 +5,8 @@ $--color-secondary: #f72585;
 $--color-yellow: #dc8e35;
 $--color-yellow-darker: #9b601d;
 $--color-bg-primary: rgba(15, 16, 32, 0.6);
+$--gradient-primary: linear-gradient(135deg, $--color-primary, #3a0e8a);
+$--gradient-secondary: linear-gradient(-135deg, $--color-primary, #16088f);
 //
 @mixin flex-el {
   display: flex;
@@ -58,6 +60,16 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .flex-col {
   flex-direction: column;
@@ -231,6 +243,39 @@ section {
     .name {
       font-size: 2rem;
       font-weight: 800;
+    }
+  }
+}
+
+.rule {
+  .top {
+    background: $--gradient-primary;
+  }
+  .bottom {
+    background-image: $--gradient-secondary;
+  }
+  &__content {
+    margin: 2vh 0;
+    padding: 1em;
+    height: fit-content;
+    font-size: 6rem;
+    h1 {
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+    li {
+      position: relative;
+      display: block;
+      padding-left: 20px;
+      margin: 1.5rem 0;
+      font-size: 2rem;
+      .fa {
+        position: absolute;
+        top: 7px;
+        left: 0;
+        color: $--color-secondary;
+        transform: rotate(45deg);
+      }
     }
   }
 }
