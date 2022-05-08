@@ -154,6 +154,7 @@ section {
     }
     h3 {
       font-size: 3rem;
+      font-weight: 200;
     }
     p {
       font-size: 1.6rem;
@@ -204,6 +205,32 @@ section {
         background-color: $--color-text;
         color: $--color-secondary;
       }
+    }
+  }
+}
+
+.counting {
+  padding-top: 10vh;
+  &__img {
+    img {
+      border-radius: 2rem;
+    }
+  }
+  &__content {
+    font-size: 6rem;
+    padding-left: 5vw;
+  }
+  &__item {
+    margin: 3.5vw;
+    .num {
+      font-size: 6rem;
+      font-weight: 800;
+      color: $--color-secondary;
+      line-height: 6rem;
+    }
+    .name {
+      font-size: 2rem;
+      font-weight: 800;
     }
   }
 }
