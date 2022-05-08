@@ -18,7 +18,22 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <section class="organize grid wide">
+    <header id="header" class="header" data-aos="fade-down">
+      <a href="https://unihack.gdsc.dev/" class="header__logo"><img src="/assets/logo-gdsc-removebg.png"></a>
+      <div class="container header__nav">
+       <a href="javascript:;" id="open-mnav" class="open-mnav"><i class="fa fa-bars" aria-hidden="true"></i></a>
+       <ul id="nav-details">
+        <li><a href="#about">Về Unihack</a></li>
+        <li><a href="#rule">Thể lệ cuộc thi</a></li>
+        <li><a href="#activity">Hoạt động</a></li>
+        <li><a href="#collab">Đối tác</a></li>
+        <li><a href="#footer">Đăng ký</a></li>
+       </ul>
+   
+      </div>
+   
+     </header>
+    <section id="collab" class="organize grid wide">
       <div data-aos="fade-up" class="heading">
         <h1>Đơn vị tổ chức</h1>
       </div>
@@ -138,7 +153,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="/assets/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
