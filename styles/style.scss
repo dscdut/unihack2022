@@ -32,8 +32,22 @@ li {
 img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+section {
+  min-height: 100vh;
+  padding-bottom: 15rem !important;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-col {
+  flex-direction: column;
 }
 .btn {
+  display: inline-block;
   padding: 1rem 1.2rem;
   border-radius: 0.6rem;
   font-size: 1.6rem;
@@ -44,7 +58,7 @@ img {
 
 .heading {
   text-align: center;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   h1 {
     display: inline-block;
     color: $--color-text;
@@ -63,10 +77,38 @@ img {
     }
   }
 }
+// SPONSOR
 
+.sponsor {
+  flex-direction: column;
+  &__type {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: -2.5rem;
+    text-align: center;
+    color: $--color-text;
+  }
+  &__name {
+    margin-top: 1.2rem;
+    font-size: 1.6rem;
+    color: $--color-text;
+  }
+  &__row {
+    margin-top: 5.6rem;
+  }
+  &__item {
+    margin-top: 4.5rem;
+  }
+  &__img {
+    width: 100%;
+    height: 10rem;
+    vertical-align: middle;
+    background-color: #fff;
+  }
+}
+
+// ORGANIZE
 .organize {
-  margin-bottom: 120rem;
-
   &__item {
     margin: 10rem 0;
   }
@@ -75,21 +117,22 @@ img {
     justify-content: center;
     img {
       height: 25.5rem;
-      width: 25.5rem;
-      object-fit: cover;
+      width: 100%rem;
     }
   }
   &__body {
-    display: flex;
+    display: flex !important; 
     align-items: center;
     flex-direction: column;
-
+    justify-content: space-around;
     &-desc {
-      width: 80%;
-      font-size: 1.8rem;
+      margin: 2rem 0;
+      font-size: 1.4rem;
       font-weight: 500;
       color: $--color-text;
-      margin: 4rem 0;
+    }
+    &-footer {
+      width: 100%;
     }
   }
 }
@@ -143,32 +186,47 @@ img {
       font-size: 2.4rem; //test vi k co anh
     }
   }
-  &__contact {
-    display: flex;
-    flex-direction: column;
-    &-item {
-      font-size: 2.8rem;
-      span {
-        margin-left: 0.4rem;
+}
+
+// Responsive
+@media (min-width: 740px) {
+  .organize {
+    &__body {
+      &-desc {
+        font-size: 1.6rem;
+        margin: 0;
       }
     }
   }
 }
 
-// Responsive
-
-@media (min-width: 1113px) {
+@media (min-width: 1024px) {
   .organize {
     &__body {
       align-items: flex-start;
       &-desc {
-        margin-bottom: 4rem;
+        font-size: 1.8rem;
       }
     }
   }
   .footer {
+    &__title {
+      font-size: 1.2rem;
+    }
     &__social {
-      justify-content: center;
+      .footer__list-link i {
+        font-size: 2.2rem;
+        margin-right: 1rem;
+      }
+    }
+    &__list {
+      &-link {
+        font-size: 1.2rem;
+        i {
+          font-size: 1.4rem;
+          margin-right: 0.6rem;
+        }
+      }
     }
   }
 }
