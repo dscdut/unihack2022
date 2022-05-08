@@ -178,7 +178,7 @@ section {
 
 .home {
   position: relative;
-  height: 120vh;
+  height: 110vh;
   text-align: center;
 }
 
@@ -226,6 +226,7 @@ section {
   width: 400px;
   margin: auto;
   border-radius: 2rem;
+  font-size: 5rem;
 }
 
 .home__wrapper-countdown .end-day {
@@ -234,7 +235,47 @@ section {
 }
 
 .home__wrapper-countdown .remain-day {
-  font-size: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home__wrapper-countdown .remain-day .day-box {
+  font-size: 3rem;
+  border: 0.3rem solid #f72585;
+  border-radius: 1rem;
+  display: block;
+  width: 50px;
+  margin: 1rem;
+}
+
+.home__wrapper .btn-register {
+  display: block;
+  padding: 1rem 2.7rem;
+  margin: 10vh auto 0;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #f72585;
+  border: 0.3rem solid #f72585;
+  border-radius: 2.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.home__wrapper .btn-register:hover {
+  background-color: #fff;
+  color: #f72585;
 }
 
 .heading {
