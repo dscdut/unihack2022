@@ -47,7 +47,7 @@ img {
 }
 
 section {
-  min-height: 100vh;
+  height: auto;
   padding-bottom: 15rem !important;
 }
 
@@ -76,6 +76,7 @@ section {
   border-radius: 0.6rem;
   font-size: 1.6rem;
   font-weight: 500;
+  cursor: pointer;
   background: #f72585;
   color: #fff;
 }
@@ -147,7 +148,7 @@ section {
 }
 
 .header__nav ul a:hover {
-  color: #DC8E35;
+  color: #dc8e35;
 }
 
 .heading {
@@ -159,6 +160,7 @@ section {
   display: inline-block;
   color: #fff;
   font-size: 3.6rem;
+  font-weight: 700;
   position: relative;
 }
 
@@ -173,6 +175,32 @@ section {
   border-radius: 1.2rem;
   height: 0.6rem;
   background: #f72585;
+}
+
+.award__img {
+  height: 30rem;
+  margin-bottom: 6.5rem;
+}
+
+.award__item {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.award__item-title {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  color: #f72585;
+  font-weight: bold;
+}
+
+.award__item-desc {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.award__btn {
+  margin-top: 3rem;
 }
 
 .sponsor {
@@ -191,8 +219,8 @@ section {
 }
 
 .sponsor__name {
-  margin-top: 1.2rem;
-  font-size: 1.6rem;
+  margin-top: 0.8rem;
+  font-size: 1.4rem;
   color: #fff;
 }
 
@@ -212,7 +240,7 @@ section {
 }
 
 .organize__item {
-  margin: 10rem 0;
+  margin-top: 10rem;
 }
 
 .organize__img {
@@ -252,11 +280,17 @@ section {
 }
 
 .organize__body-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 
 .footer {
-  padding: 10rem 0;
+  padding: 0 0 10rem;
 }
 
 .footer__title {
@@ -324,13 +358,43 @@ section {
 }
 
 @media (min-width: 740px) {
+  .award__img {
+    height: 45.5rem;
+  }
+  .award__item {
+    margin: 1rem 2rem;
+  }
   .organize__body-desc {
     font-size: 1.6rem;
     margin: 0;
   }
+  .organize__body-footer {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .sponsor__name {
+    margin-top: 1.2rem;
+    font-size: 1.6rem;
+  }
+  .sponsor__item {
+    margin: 4.5rem -1rem 0;
+  }
+  .sponsor__img {
+    width: 80%;
+  }
 }
 
 @media (min-width: 1024px) {
+  section {
+    min-height: 100vh;
+  }
+  .award__item {
+    margin: 0;
+  }
+  .sponsor__item {
+    margin: 4.5rem -2rem 0;
+  }
   .organize__body {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -401,7 +465,7 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #DC8E35;
+    background-color: #dc8e35;
     width: 200px;
     padding-bottom: 65vh;
   }
