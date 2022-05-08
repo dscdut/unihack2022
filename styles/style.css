@@ -479,6 +479,15 @@ section {
   color: #0f1020;
 }
 
+.container .content p .fa {
+  font-size: 5px;
+  color: #f72585;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .container.timeline--left .date {
   right: -95px;
 }
