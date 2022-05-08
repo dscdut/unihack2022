@@ -518,6 +518,10 @@ section {
   background: #f72585;
 }
 
+.award {
+  padding-top: 10vh;
+}
+
 .award__img {
   height: 30rem;
   margin-bottom: 6.5rem;
