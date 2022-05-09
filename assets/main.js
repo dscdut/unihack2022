@@ -1,5 +1,10 @@
 var bar = document.getElementById("open-mnav");
 var mobileNav = document.getElementById("nav-details");
+let textDiv = document.querySelector(".coming-soon");
+const btnAward = document.querySelector(".award__btn");
+const btnClose = document.querySelector(".close-btn");
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
 let checkNav = 0;
 bar.addEventListener("click", () => {
   if (checkNav === 0) {
@@ -45,7 +50,6 @@ var x = setInterval(function () {
   }
 }, 1000);
 
-let textDiv = document.querySelector(".coming-soon");
 let text = `Coming soon... `;
 let i = 0;
 (function type() {
@@ -59,3 +63,18 @@ let i = 0;
     }
   }
 })();
+
+togglePopup = () => {
+  modal.classList.toggle("active");
+  overlay.classList.toggle("active");
+};
+
+btnClose.addEventListener("click", togglePopup);
+btnAward.addEventListener("click", togglePopup);
+
+window.addEventListener("click", (e) => {
+  if (e.target == overlay) {
+    modal.classList.remove("active");
+    overlay.classList.remove("active");
+  }
+});

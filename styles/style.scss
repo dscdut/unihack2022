@@ -26,6 +26,15 @@ $--gradient-secondary: linear-gradient(-135deg, $--color-primary, #16088f);
 *::after {
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: $--color-primary;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $--color-secondary;
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -155,6 +164,99 @@ section {
   }
 }
 
+.close-btn {
+  height: 4rem;
+  width: 4rem;
+  background-color: var(--dark);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    height: 0.2rem;
+    width: 2rem;
+    left: 50%;
+    top: 50%;
+    background-color: $--color-text;
+    transition: 0.3s ease;
+  }
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  &:hover {
+    &::after,
+    &::before {
+      background: $--color-secondary;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+.overlay {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000ab;
+  z-index: 998;
+  opacity: 0;
+  transition: all 0.5s ease;
+
+  visibility: hidden;
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.modal {
+  position: fixed;
+  overflow-y: scroll;
+  top: 50%;
+  left: 50%;
+  height: 90vh;
+  width: 60%;
+  border-radius: 2rem;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 999;
+  padding: 1rem 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+  background: $--gradient-primary;
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: 3.6rem;
+      color: $--color-secondary;
+      font-weight: 700;
+    }
+    &-close {
+      display: inline-block;
+      font-size: 4rem;
+    }
+  }
+  &__body {
+    margin-top: 4rem;
+    p {
+      letter-spacing: 1px;
+      line-height: 1.5;
+      font-size: 1.4rem;
+    }
+  }
+}
 .home {
   position: relative;
   height: 110vh;
