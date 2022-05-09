@@ -883,4 +883,32 @@ section {
     border-radius: 500px 0 0 500px;
   }
 }
+
+@media (max-width: 760px) {
+  .home__wrapper h1 {
+    font-size: 6rem;
+  }
+  .home__wrapper h3 {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  .home__wrapper p {
+    font-size: 1.5rem;
+    max-width: 60%;
+    margin: 2rem auto;
+  }
+  .home-countdown {
+    width: 400px;
+  }
+  .home-countdown .remain-day .day-box {
+    font-size: 2rem;
+  }
+  .home-countdown .remain-day .text {
+    font-size: 1.6rem;
+  }
+  .home .btn-register {
+    margin: 3vh auto 0;
+    font-size: 1.5rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

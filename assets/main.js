@@ -52,7 +52,6 @@ let i = 0;
   if (i < text.length) {
     textDiv.innerHTML += text.charAt(i);
     i++;
-    console.log(i);
     setTimeout(type, Math.floor(Math.random() * 400) + 50);
     if (i === text.length) {
       textDiv.innerHTML = "";
