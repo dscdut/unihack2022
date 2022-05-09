@@ -388,7 +388,7 @@ section {
 }
 
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
   background: #f72585;
@@ -422,7 +422,7 @@ section {
 }
 
 .container::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 16px;
   height: 16px;
@@ -435,7 +435,7 @@ section {
 }
 
 .container::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 50px;
   height: 2px;
@@ -868,6 +868,34 @@ section {
   .container.timeline--right .content {
     padding: 30px 30px 30px 90px;
     border-radius: 500px 0 0 500px;
+  }
+}
+
+@media (max-width: 760px) {
+  .home__wrapper h1 {
+    font-size: 6rem;
+  }
+  .home__wrapper h3 {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  .home__wrapper p {
+    font-size: 1.5rem;
+    max-width: 60%;
+    margin: 2rem auto;
+  }
+  .home-countdown {
+    width: 400px;
+  }
+  .home-countdown .remain-day .day-box {
+    font-size: 2rem;
+  }
+  .home-countdown .remain-day .text {
+    font-size: 1.6rem;
+  }
+  .home .btn-register {
+    margin: 3vh auto 0;
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

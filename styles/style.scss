@@ -14,7 +14,7 @@ $--gradient-secondary: linear-gradient(-135deg, $--color-primary, #16088f);
   height: 100%;
 }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Quicksand:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Quicksand:wght@300;400;500;600&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -154,7 +154,7 @@ section {
   height: 110vh;
   text-align: center;
   img.banner {
-    object-fit:cover;
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -178,7 +178,7 @@ section {
       max-width: 60%;
       margin: 2rem auto;
     }
-    
+
     &-countdown {
       // background-color: $--color-bg-primary;
       width: 400px;
@@ -205,7 +205,7 @@ section {
           border: none;
         }
       }
-    }   
+    }
     .btn-register {
       display: block;
       padding: 1rem 2.7rem;
@@ -292,7 +292,7 @@ section {
   margin: 0 auto;
   padding: 15px 0;
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 2px;
     background: $--color-secondary;
@@ -308,7 +308,7 @@ section {
   position: relative;
   background: inherit;
   width: 50%;
-  &.timeline--left{
+  &.timeline--left {
     left: 0;
   }
   &.timeline--right {
@@ -321,7 +321,7 @@ section {
     }
   }
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 16px;
     height: 16px;
@@ -333,7 +333,7 @@ section {
     z-index: 1;
   }
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 50px;
     height: 2px;
@@ -377,7 +377,7 @@ section {
         display: inline-block;
         margin-right: 10px;
       }
-    } 
+    }
   }
 }
 
@@ -696,7 +696,7 @@ section {
     }
   }
 }
-// Responsive for timeline 
+// Responsive for timeline
 @media (max-width: 767.98px) {
   .timeline::after {
     left: 90px;
@@ -712,7 +712,7 @@ section {
     left: 0%;
   }
 
-  .container.timeline--left::after, 
+  .container.timeline--left::after,
   .container.timeline--right::after {
     left: 82px;
   }
@@ -741,4 +741,38 @@ section {
     border-radius: 500px 0 0 500px;
   }
 }
-
+@media (max-width: 760px) {
+  .home {
+    &__wrapper {
+      h1 {
+        font-size: 6rem;
+      }
+      h3 {
+        font-size: 2rem;
+        font-weight: 200;
+      }
+      p {
+        font-size: 1.5rem;
+        max-width: 60%;
+        margin: 2rem auto;
+      }
+    }
+    &-countdown {
+      // background-color: $--color-bg-primary;
+      width: 400px;
+      // box-shadow: 0px 4px 20px 0px rgba(255, 32, 117, 0.2);
+      .remain-day {
+        .day-box {
+          font-size: 2rem;
+        }
+        .text {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .btn-register {
+      margin: 3vh auto 0;
+      font-size: 1.5rem;
+    }
+  }
+}
