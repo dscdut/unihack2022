@@ -110,6 +110,14 @@ section {
   cursor: pointer;
   background: #f72585;
   color: #fff;
+  border: 0.3rem solid #f72585;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #f72585;
 }
 
 .header {
@@ -388,7 +396,7 @@ section {
 }
 
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
   background: #f72585;
@@ -422,7 +430,7 @@ section {
 }
 
 .container::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 16px;
   height: 16px;
@@ -435,7 +443,7 @@ section {
 }
 
 .container::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 50px;
   height: 2px;
@@ -527,6 +535,11 @@ section {
   background: #f72585;
 }
 
+.coming-soon {
+  height: 80vh;
+  font-size: 8.5rem;
+}
+
 .award {
   padding-top: 10vh;
 }
@@ -542,7 +555,7 @@ section {
 }
 
 .award__item-title {
-  font-size: 4rem;
+  font-size: 3.2rem;
   margin-bottom: 1.5rem;
   color: #f72585;
   font-weight: bold;
