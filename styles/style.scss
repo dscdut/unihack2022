@@ -13,8 +13,8 @@ $--gradient-secondary: linear-gradient(-135deg, $--color-primary, #16088f);
   align-items: center;
   height: 100%;
 }
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Quicksand:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Quicksand:wght@300;400;500;600&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -37,7 +37,7 @@ $--gradient-secondary: linear-gradient(-135deg, $--color-primary, #16088f);
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.4;
   font-weight: 300;
   background-color: $--color-primary;
@@ -174,7 +174,7 @@ section {
   position: relative;
   &::after,
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     height: 0.2rem;
     width: 2rem;
@@ -400,7 +400,7 @@ section {
   margin: 0 auto;
   padding: 15px 0;
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 2px;
     background: $--color-secondary;
@@ -429,7 +429,7 @@ section {
     }
   }
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 16px;
     height: 16px;
@@ -441,7 +441,7 @@ section {
     z-index: 1;
   }
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 50px;
     height: 2px;
@@ -511,7 +511,7 @@ section {
     font-weight: 700;
     position: relative;
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       bottom: -1rem;
       left: 50%;
@@ -532,7 +532,7 @@ section {
   &__img {
     position: relative;
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       height: 100vh;
       width: 100%;
@@ -646,7 +646,7 @@ section {
     margin: 6rem 0 3.5rem;
     color: $--color-text;
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       width: 100%;
       height: 1px;
@@ -911,3 +911,38 @@ section {
     }
   }
 }
+
+// the le
+.text-section .text-part {
+  font-size: 5rem;
+}
+
+.text-part {
+  margin-bottom: 2rem;
+}
+
+.section-title .title {
+  color: $--color-secondary;
+}
+
+.section-content p {
+  font-size: 1.5rem;
+}
+
+.bold-gray-text {
+  font-weight: bold;
+  // color: gray;
+}
+
+.pad-left {
+  padding-left: 2rem;
+}
+
+.pad-top {
+  padding-top: 2rem;
+}
+
+.pad-top-1-5 {
+  padding-top: 1.5rem;
+}
+

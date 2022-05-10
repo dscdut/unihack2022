@@ -28,7 +28,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.4;
   font-weight: 300;
   background-color: #0f1020;
@@ -237,7 +237,7 @@ section {
 }
 
 .close-btn::after, .close-btn::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 0.2rem;
   width: 2rem;
@@ -524,7 +524,7 @@ section {
 }
 
 .timeline::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 2px;
   background: #f72585;
@@ -558,7 +558,7 @@ section {
 }
 
 .container::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 16px;
   height: 16px;
@@ -571,7 +571,7 @@ section {
 }
 
 .container::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 50px;
   height: 2px;
@@ -651,7 +651,7 @@ section {
 }
 
 .heading h1::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -1rem;
   left: 50%;
@@ -679,7 +679,7 @@ section {
 }
 
 .award__img:after {
-  content: "";
+  content: '';
   position: absolute;
   height: 100vh;
   width: 100%;
@@ -818,7 +818,7 @@ section {
 }
 
 .footer__title::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 1px;
@@ -1065,5 +1065,37 @@ section {
     margin: 3vh auto 0;
     font-size: 1.5rem;
   }
+}
+
+.text-section .text-part {
+  font-size: 5rem;
+}
+
+.text-part {
+  margin-bottom: 2rem;
+}
+
+.section-title .title {
+  color: #f72585;
+}
+
+.section-content p {
+  font-size: 1.5rem;
+}
+
+.bold-gray-text {
+  font-weight: bold;
+}
+
+.pad-left {
+  padding-left: 2rem;
+}
+
+.pad-top {
+  padding-top: 2rem;
+}
+
+.pad-top-1-5 {
+  padding-top: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
