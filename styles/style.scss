@@ -44,10 +44,11 @@ $--gradient-secondary: linear-gradient(-135deg, $--color-primary, #16088f);
   src: url("../fonts/UTM\ Avo.ttf");
 }
 body {
+  font-family: "Montserrat", sans-serif;
   line-height: 1.4;
   background-color: $--color-primary;
   color: $--color-text;
-  font-family: "Avo Bold", sans-serif;
+  font-family: "Avo ", sans-serif;
 }
 ul {
   padding: 0;
@@ -932,4 +933,38 @@ section {
       font-size: 1.5rem;
     }
   }
+}
+
+// the le
+.text-section .text-part {
+  font-size: 5rem;
+}
+
+.text-part {
+  margin-bottom: 2rem;
+}
+
+.section-title .title {
+  color: $--color-secondary;
+}
+
+.section-content p {
+  font-size: 1.5rem;
+}
+
+.bold-gray-text {
+  font-weight: bold;
+  // color: gray;
+}
+
+.pad-left {
+  padding-left: 2rem;
+}
+
+.pad-top {
+  padding-top: 2rem;
+}
+
+.pad-top-1-5 {
+  padding-top: 1.5rem;
 }

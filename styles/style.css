@@ -37,10 +37,11 @@
 }
 
 body {
+  font-family: "Montserrat", sans-serif;
   line-height: 1.4;
   background-color: #200343;
   color: #fff;
-  font-family: "Avo Bold", sans-serif;
+  font-family: "Avo ", sans-serif;
 }
 
 ul {
@@ -1084,5 +1085,37 @@ section {
     margin: 3vh auto 0;
     font-size: 1.5rem;
   }
+}
+
+.text-section .text-part {
+  font-size: 5rem;
+}
+
+.text-part {
+  margin-bottom: 2rem;
+}
+
+.section-title .title {
+  color: #3a93d1;
+}
+
+.section-content p {
+  font-size: 1.5rem;
+}
+
+.bold-gray-text {
+  font-weight: bold;
+}
+
+.pad-left {
+  padding-left: 2rem;
+}
+
+.pad-top {
+  padding-top: 2rem;
+}
+
+.pad-top-1-5 {
+  padding-top: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
