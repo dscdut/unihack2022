@@ -530,8 +530,29 @@ section {
 .award {
   padding-top: 10vh;
   &__img {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      height: 100vh;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgb(68, 13, 83);
+      background: radial-gradient(
+        circle,
+        rgba(68, 13, 83, 1) 0%,
+        rgba(104, 66, 134, 1) 26%,
+        rgba(187, 190, 241, 0) 62%
+      );
+      z-index: -1;
+    }
     height: 30rem;
     margin-bottom: 6.5rem;
+    img {
+      z-index: 10;
+    }
   }
   &__item {
     margin-top: 4rem;
@@ -590,9 +611,10 @@ section {
   &__img {
     display: flex;
     justify-content: center;
+    overflow: hidden;
     img {
+      border-radius: 1.4rem;
       height: 25.5rem;
-      width: 100%rem;
     }
   }
   &__body {
@@ -658,10 +680,12 @@ section {
   }
   &__sponsors {
     display: flex;
+    flex-direction: column;
     &-item {
-      margin-right: 1.8rem;
-
-      font-size: 2.4rem; //test vi k co anh
+      padding: 1rem 0;
+      img {
+        height: auto;
+      }
     }
   }
 }
