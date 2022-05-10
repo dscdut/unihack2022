@@ -1,105 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <title>UniHack</title>
-    <link rel="stylesheet" href="./styles/grid.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  </head>
-  <body>
-    <header id="header" class="header" data-aos="fade-down">
-      <a href="https://unihack.gdsc.dev/" class="header__logo"
-        ><img src="/assets/logo-gdsc-removebg.png"
-      /></a>
-      <div class="header__nav">
-        <a href="javascript:;" id="open-mnav" class="open-mnav"
-          ><i class="fa fa-bars" aria-hidden="true"></i
-        ></a>
-        <ul id="nav-details">
-          <li>
-            <a href="#about">Về Unihack</a>
-            <div class="dropdown">
-              <a href="#">Lịch trình chi tiết</a>
-              <a href="#">Proposal</a>
-              <a href="#">Handbook thí sinh</a>
-              <a href="#">Mentor Desk</a>
-            </div>
-          </li>
-          <li><a href="#rule">Thể lệ cuộc thi</a></li>
-          <li><a href="#activity">Hoạt động</a></li>
-          <li><a href="#collab">Đối tác</a></li>
-          <li>
-            <a href="#footer">Đăng ký</a>
-            <div class="dropdown">
-              <a href="#">Đăng ký Nhà tài trợ</a>
-              <a href="#">Đăng ký Đội thi</a>
-              <a href="#">Đăng ký Mentor</a>
-              <a href="#">Đăng ký TNV</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <section id="about" class="home">
-      <img src="/assets/briefBg.png" class="banner" data-aos="fade-in" alt="">
-      <div class="home__wrapper">
-        <div class="home__wrapper-content" data-aos="fade-up">
-          <h1 class="title">UNIHACK 2022</h1>
-          <h3 class="sub-title">Cơ hội - Kết nối - Trải nghiệm</h3>
-          <p class="description">Sự kiện Unihack 2022 lần đầu tiên được tổ chức bởi CLB Google Developer Student Club - Danang University Science and Technology (GDSC - DUT).</p>
-          <div class="home__wrapper-countdown" data-aos="fade-up">
-            <div id="remain-day" class="remain-day">
-              <span id="day" class="day-box"></span>:
-              <span id="hour" class="day-box"></span>:
-              <span id="min" class="day-box"></span>:
-              <span id="sec" class="day-box"></span>
-            </div>
-            <div class="remain-day">
-              <span class="day-box text">Ngày</span>
-              <span  class="day-box text">Giờ</span>
-              <span class="day-box text">Phút</span>
-              <span class="day-box text">Giây</span>
-            </div>
+  <title>UniHack</title>
+  <link rel="stylesheet" href="./styles/grid.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <header id="header" class="header" data-aos="fade-down">
+    <a href="https://unihack.gdsc.dev/" class="header__logo"
+      ><img src="/assets/logo-gdsc-removebg.png"
+    /></a>
+    <div class="header__nav">
+      <a href="javascript:;" id="open-mnav" class="open-mnav"
+        ><i class="fa fa-bars" aria-hidden="true"></i
+      ></a>
+      <ul id="nav-details">
+        <li>
+          <a href="#about">Về Unihack</a>
+          <div class="dropdown">
+            <a href="#">Lịch trình chi tiết</a>
+            <a href="#">Proposal</a>
+            <a href="#">Handbook thí sinh</a>
+            <a href="#">Mentor Desk</a>
           </div>
-          <a href="https://url.dscdut.com/UniHack2022-RegisterForm" target="_blank" class="btn-register">
-            Đăng ký tham gia
-          </a>
-        </div>
-      </div>
-    </section>
-    <section id="counting" class="counting grid wide">
-      <div data-aos="fade-up" class="heading">
-        <h1>Những con số ấn tượng</h1>
-      </div>
-      <div class="row center">
-        <div data-aos="fade-right" class="col l-6 m-6 c-12 counting__img"">
-          <img src="/assets/smartEducation.png" alt="">
-        </div>
-        <div data-aos="fade-left" class="col l-5 m-6 c-12 counting__content">
-          <div class="counting__item">
-            <div class="num">30+</div>
-            <div class="name">Chuyên gia dầu ngành về lĩnh vực công nghệ</div>
+        </li>
+        <li><a href="#rule">Thể lệ cuộc thi</a></li>
+        <li><a href="#activity">Hoạt động</a></li>
+        <li><a href="#collab">Đối tác</a></li>
+        <li>
+          <a href="#footer">Đăng ký</a>
+          <div class="dropdown">
+            <a href="#">Đăng ký Nhà tài trợ</a>
+            <a href="#">Đăng ký Đội thi</a>
+            <a href="#">Đăng ký Mentor</a>
+            <a href="#">Đăng ký TNV</a>
           </div>
         </li>
       </ul>
     </div>
   </header>
   <section id="about" class="home">
-    <img src="https://archive.org/download/msdos_Dark_Sun_-_Shattered_Lands_1993/screenshot_23.jpg" class="banner"
-      data-aos="fade-in" alt="">
+    <img src="/assets/briefBg.png" class="banner" data-aos="fade-in" alt="">
     <div class="home__wrapper">
       <div class="home__wrapper-content" data-aos="fade-up">
         <h1 class="title">UNIHACK 2022</h1>
         <h3 class="sub-title">Cơ hội - Kết nối - Trải nghiệm</h3>
-        <p class="description">Sự kiện Unihack 2022 lần đầu tiên được tổ chức bởi CLB Google Developer Student Club -
-          Danang University Science and Technology (GDSC - DUT).</p>
+        <p class="description">Sự kiện Unihack 2022 lần đầu tiên được tổ chức bởi CLB Google Developer Student Club - Danang University Science and Technology (GDSC - DUT).</p>
         <div class="home__wrapper-countdown" data-aos="fade-up">
           <div id="remain-day" class="remain-day">
             <span id="day" class="day-box"></span>:
@@ -109,12 +62,12 @@
           </div>
           <div class="remain-day">
             <span class="day-box text">Ngày</span>
-            <span class="day-box text">Giờ</span>
+            <span  class="day-box text">Giờ</span>
             <span class="day-box text">Phút</span>
             <span class="day-box text">Giây</span>
           </div>
         </div>
-        <a href="#" class="btn-register">
+        <a href="https://url.dscdut.com/UniHack2022-RegisterForm" target="_blank" class="btn-register">
           Đăng ký tham gia
         </a>
       </div>
@@ -126,7 +79,7 @@
     </div>
     <div class="row center">
       <div data-aos="fade-right" class="col l-6 m-6 c-12 counting__img"">
-          <img src=" /assets/smartEducation.png" alt="">
+        <img src="/assets/smartEducation.png" alt="">
       </div>
       <div data-aos="fade-left" class="col l-5 m-6 c-12 counting__content">
         <div class="counting__item">
