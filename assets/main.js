@@ -2,6 +2,7 @@ var bar = document.getElementById("open-mnav");
 var mobileNav = document.getElementById("nav-details");
 let textDiv = document.querySelector(".coming-soon");
 const btnAward = document.querySelector(".award__btn");
+console.log(btnAward);
 const btnClose = document.querySelector(".close-btn");
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
