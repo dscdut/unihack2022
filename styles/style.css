@@ -651,7 +651,7 @@ section {
 }
 
 .container .date span {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
@@ -1129,15 +1129,28 @@ section {
     left: 100px;
     border-color: transparent #3a93d1 transparent transparent;
   }
-  .container.timeline--left .date,
+  .container.timeline--left .date {
+    right: auto;
+    left: -55px;
+  }
+  .container.timeline--left .date span {
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 35px;
+  }
   .container.timeline--right .date {
     right: auto;
-    left: 15px;
+    left: -135px;
+  }
+  .container.timeline--right .date span {
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 35px;
   }
   .container.timeline--left .icon,
   .container.timeline--right .icon {
     right: auto;
-    left: 146px;
+    left: 156px;
   }
   .container.timeline--left .content,
   .container.timeline--right .content {
