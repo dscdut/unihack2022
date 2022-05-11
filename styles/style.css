@@ -199,7 +199,7 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: rgba(15, 16, 32, 0.6);
-  width: 100%;
+  width: 100vw;
   height: 80px;
   margin-top: -9px;
   font-family: "Avo";
@@ -244,6 +244,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+  z-index: -1;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -428,8 +429,8 @@ section {
 }
 
 .home__wrapper .title img {
-  margin: -30rem 0 -6rem;
-  width: 75%;
+  margin: -10rem 0 -3rem;
+  width: 90%;
 }
 
 .home__wrapper h3 {
@@ -554,6 +555,7 @@ section {
 
 .rule__content h1 {
   font-weight: 600;
+  font-size: 2.2rem;
   margin-bottom: 2rem;
 }
 
@@ -562,7 +564,7 @@ section {
   display: block;
   padding-left: 20px;
   margin: 1.5rem 0;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .rule__content li .fa-solid {
@@ -668,13 +670,13 @@ section {
 
 .container .content h2 {
   margin: 0 0 10px 0;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color: #3a93d1;
   font-size: "Avo Bold";
 }
 
 .container .content span {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #200343;
   display: inline-block;
   margin-bottom: 1rem;
@@ -683,7 +685,7 @@ section {
 
 .container .content p {
   margin: 0;
-  font-size: 16px;
+  font-size: 1.4rem;
   line-height: 22px;
   color: #200343;
 }
@@ -716,7 +718,7 @@ section {
 .heading__left, .heading__center {
   display: inline-block;
   color: #fff;
-  font-size: 3.6rem;
+  font-size: 2.4rem;
   font-weight: 700;
   position: relative;
 }
@@ -725,28 +727,26 @@ section {
   content: "";
   position: absolute;
   top: 50%;
-  width: 30%;
+  width: 10%;
   border-radius: 1.2rem;
   height: 0.6rem;
   background: linear-gradient(-135deg, #1b0e979f, #3a93d1);
   right: -1rem;
   -webkit-transform: translate(100%, -50%);
           transform: translate(100%, -50%);
-  width: 30%;
 }
 
 .heading__center::before {
   content: "";
   position: absolute;
   top: 50%;
-  width: 30%;
+  width: 10%;
   border-radius: 1.2rem;
   height: 0.6rem;
   background: -webkit-gradient(linear, left top, right top, from(#1b0e979f), to(#3a93d1));
   background: linear-gradient(90deg, #1b0e979f, #3a93d1);
   -webkit-transform: translate(-100%, -50%);
           transform: translate(-100%, -50%);
-  width: 30%;
   left: -1rem;
 }
 
@@ -760,12 +760,26 @@ section {
 }
 
 .award__item {
-  margin-top: 4rem;
+  margin-top: 10rem;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .award__item-img {
-  height: 15rem;
+  height: auto;
+  width: 60%;
   margin-bottom: 2rem;
 }
 
@@ -972,12 +986,9 @@ section {
 }
 
 @media (min-width: 740px) {
-  .award__item {
-    margin: 1rem 2rem;
-  }
-  .award__item-img {
-    height: 15rem;
-    margin-bottom: 4rem;
+  .home__wrapper .title img {
+    margin: -15rem 0 -10rem;
+    width: 100%;
   }
   .organize__body-heading {
     font-size: 1.8rem;
@@ -1016,6 +1027,7 @@ section {
   }
   .award__item-img {
     height: 25rem;
+    width: 100%;
   }
   .sponsor__item {
     margin: 4.5rem -2rem 0;
@@ -1045,9 +1057,25 @@ section {
 }
 
 @media (min-width: 1240px) {
+  .heading {
+    margin-bottom: 4rem;
+  }
+  .heading__left, .heading__center {
+    font-size: 3.6rem;
+  }
+  .heading__left::after, .heading__center::after {
+    width: 30%;
+  }
+  .heading__center::before {
+    width: 30%;
+  }
   .home__wrapper .title img {
     margin: -15rem 0 -11rem;
     width: 60%;
+  }
+  .award__item-img img {
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .footer__title {
     font-size: 1.8rem;
@@ -1084,6 +1112,9 @@ section {
     display: block;
   }
   .header__nav ul {
+    position: fixed;
+    top: 0;
+    right: 0;
     padding-top: 10vh;
     height: 100vh;
     display: none;
@@ -1095,8 +1126,9 @@ section {
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #dc8e35;
-    width: 200px;
+    width: 30rem;
     padding-bottom: 65vh;
+    right: 0;
   }
   .header__nav ul li .dropdown {
     display: none;
