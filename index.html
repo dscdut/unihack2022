@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
   <title>UniHack</title>
   <link rel="stylesheet" href="./styles/grid.css" />
   <link rel="stylesheet" href="./styles/style.css" />
@@ -14,6 +15,11 @@
   <link rel="icon" href="./assets/favicon.ico">
 </head>
 <body>
+  <div id="back-to-top" class="center">
+    <a href="#about">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+  </div>
   <header id="header" class="header" data-aos="fade-down">
     <a href="https://unihack.gdsc.dev/" class="header__logo"
       ><img src="/assets/logo-gdsc-removebg.png"
@@ -82,7 +88,7 @@
     </div>
     <div class="row center">
       <div data-aos="fade-right" class="col l-6 m-6 c-12 counting__img">
-        <img src="/assets/smartEducation.png" alt="">
+        <img src="./assets/LogoSME.png" alt="">
       </div>
       <div data-aos="fade-left" class="col l-5 m-6 c-12 counting__content">
         <div class="counting__item">
@@ -135,7 +141,9 @@
       <h1 class="heading__center ">Lịch trình cuộc thi</h1>
     </div>
     <div class="container timeline--left" data-aos="fade-up">
-      <div class="date">8/5 - 24/5</div>
+      <div class="date">
+        <span>8/5 - 24/5</span>
+      </div>
       <div class="content">
         <h2>MỞ ĐƠN ĐĂNG KÝ</h2>
         <span>Online</span> 
@@ -147,7 +155,9 @@
       </div>
     </div>
     <div class="container timeline--right" data-aos="fade-up">
-      <div class="date">22/5</div>
+      <div class="date">
+        <span>22/5</span>
+      </div>
       <div class="content">
         <h2>INFO SESSION</h2>
         <span>Offline</span>
@@ -159,7 +169,9 @@
       </div>
     </div>
     <div class="container timeline--left" data-aos="fade-up">
-      <div class="date">23/5 - 27/5</div>
+      <div class="date">
+        <span>23/5 - 27/5</span>
+      </div>
       <div class="content">
         <h2>TUẦN SƠ LOẠI Ý TƯỞNG</h2>
         <span>Online</span>
@@ -171,7 +183,9 @@
       </div>
     </div>
     <div class="container timeline--right" data-aos="fade-up">
-      <div class="date">28/5 - 29/5</div>
+      <div class="date">
+        <span>28/5 - 29/5</span>
+      </div>
       <div class="content">
         <h2>CODING DAY</h2>
         <span>Offline</span>
@@ -195,14 +209,24 @@
     </div>
     <div class="row center">
       <div data-aos="fade-up" data-aos-delay="100" class="col l-4 m-4 c-12 award__item">
-        <span class="award__item-title"> > 50.000.000 VNĐ</span>
-        <p class="award__item-desc">
-          Tổng giải thưởng bao gồm hiện kim và hiện vật
-        </p>
+        <div class=" center flex-col">
+            <div class="award__item-img">
+              <img src="./assets/award_1.png" alt="">
+            </div>
+            <span class="award__item-title"> > 50.000.000 VNĐ</span>
+            <p class="award__item-desc">
+              Tổng giải thưởng bao gồm hiện kim và hiện vật
+            </p>
+          </div>
       </div>
       <div data-aos="fade-up" data-aos-delay="200" class="col l-4 m-4 c-12 award__item">
-        <span class="award__item-title">GIẤY CHỨNG NHẬN</span>
-        <p class="award__item-desc">Tất cả các thí sinh khi tham gia cuộc thi đều được BTC cấp giấy chứng nhận</p>
+        <div class="center flex-col">
+            <div class="award__item-img">
+              <img src="./assets/award_2.png" alt="">
+            </div>
+          <span class="award__item-title">GIẤY CHỨNG NHẬN</span>
+          <p class="award__item-desc">Tất cả các thí sinh khi tham gia cuộc thi đều được BTC cấp giấy chứng nhận</p>
+        </div>
       </div>
       <div data-aos="fade-up" data-aos-delay="300" class="col l-4 m-4 c-12 award__item">
         <span class="award__item-title">IT TOUR COMPANY</span>

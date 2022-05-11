@@ -116,7 +116,33 @@ section {
     color: $--color-secondary;
   }
 }
+@keyframes up {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+}
 
+#back-to-top {
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  bottom: 2rem;
+  right: 2rem;
+  border-radius: 1.2rem;
+  background: $--color-secondary;
+  i {
+    display: inline-block;
+    font-size: 2.2rem;
+    animation: up 1.5s infinite;
+  }
+}
 .header {
   @include flex-el;
   position: fixed;
@@ -469,16 +495,20 @@ section {
     z-index: 1;
   }
   .date {
+    width: 20rem;
+    height: 4rem;
     position: absolute;
     display: inline-block;
-    top: calc(50% - 8px);
+    top: calc(50% - 15px);
     text-align: center;
-    font-size: 2.2rem;
-    font-weight: bold;
-    color: $--color-text;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    z-index: 1;
+    span {
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: $--color-text;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      z-index: 1;
+    }
   }
   .content {
     padding: 30px 90px 30px 30px;
@@ -514,10 +544,11 @@ section {
 }
 
 .container.timeline--left .date {
-  right: -15rem;
+  right: -18rem;
 }
 .container.timeline--right .date {
-  left: -15rem;
+  left: -22rem;
+  text-align: right;
 }
 
 .container.timeline--right .content {
@@ -570,34 +601,14 @@ section {
 }
 .award {
   padding-top: 10vh;
-  &__img {
-    position: relative;
-    &:after {
-      content: "";
-      position: absolute;
-      height: 100vh;
-      width: 100%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: rgb(68, 13, 83);
-      background: radial-gradient(
-        circle,
-        rgba(68, 13, 83, 1) 0%,
-        rgba(104, 66, 134, 1) 26%,
-        rgba(187, 190, 241, 0) 62%
-      );
-      z-index: -1;
-    }
-    height: 30rem;
-    margin-bottom: 6.5rem;
-    img {
-      z-index: 10;
-    }
-  }
+
   &__item {
     margin-top: 4rem;
     text-align: center;
+    &-img {
+      height: 15rem;
+      margin-bottom: 2rem;
+    }
     &-title {
       font-size: 3.2rem;
       margin-bottom: 1.5rem;
@@ -738,10 +749,11 @@ section {
 // Responsive
 @media (min-width: 740px) {
   .award {
-    &__img {
-      height: 45.5rem;
-    }
     &__item {
+      &-img {
+        height: 15rem;
+        margin-bottom: 2rem;
+      }
       margin: 1rem 2rem;
     }
   }
@@ -784,6 +796,10 @@ section {
   }
   .award {
     &__item {
+      &-img {
+        height: 25rem;
+        margin-bottom: 2rem;
+      }
       margin: 0;
     }
   }
@@ -986,8 +1002,11 @@ section {
   color: $--color-secondary;
 }
 
-.section-content p {
-  font-size: 1.5rem;
+.section-content {
+  text-align: justify;
+  p {
+    font-size: 1.5rem;
+  }
 }
 
 .bold-gray-text {
