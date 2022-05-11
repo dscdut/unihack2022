@@ -19,6 +19,12 @@ $--gradient-secondary-light: linear-gradient(
   align-items: center;
   height: 100%;
 }
+@mixin flex-col-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
 * {
   box-sizing: border-box;
@@ -149,7 +155,7 @@ section {
   z-index: 100;
   justify-content: space-between;
   background-color: $--color-bg-primary;
-  width: 100%;
+  width: 100vw;
   height: 80px;
   margin-top: -9px;
   font-family: "Avo";
@@ -172,6 +178,8 @@ section {
     }
     ul {
       @include flex-el;
+
+      z-index: -1;
       transition: 0.4s;
       li {
         margin: 0 2rem;
@@ -314,8 +322,8 @@ section {
     z-index: 10;
     width: 100%;
     & .title img {
-      margin: -30rem 0 -6rem;
-      width: 75%;
+      margin: -10rem 0 -3rem;
+      width: 90%;
     }
     h3 {
       font-family: "Montserrat", sans-serif;
@@ -418,6 +426,7 @@ section {
     font-size: 6rem;
     h1 {
       font-weight: 600;
+      font-size: 2.2rem;
       margin-bottom: 2rem;
     }
     li {
@@ -425,7 +434,7 @@ section {
       display: block;
       padding-left: 20px;
       margin: 1.5rem 0;
-      font-size: 2rem;
+      font-size: 1.6rem;
       .fa-solid {
         font-size: 1.4rem;
         position: absolute;
@@ -518,12 +527,12 @@ section {
     border-radius: 0 500px 500px 0;
     h2 {
       margin: 0 0 10px 0;
-      font-size: 2.2rem;
+      font-size: 1.8rem;
       color: $--color-secondary;
       font-size: "Avo Bold";
     }
     span {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       color: $--color-primary;
       display: inline-block;
       margin-bottom: 1rem;
@@ -531,7 +540,7 @@ section {
     }
     p {
       margin: 0;
-      font-size: 16px;
+      font-size: 1.4rem;
       line-height: 22px;
       color: $--color-primary;
       .fa-solid {
@@ -563,20 +572,19 @@ section {
   &__center {
     display: inline-block;
     color: $--color-text;
-    font-size: 3.6rem;
+    font-size: 2.4rem;
     font-weight: 700;
     position: relative;
     &::after {
       content: "";
       position: absolute;
       top: 50%;
-      width: 30%;
+      width: 10%;
       border-radius: 1.2rem;
       height: 0.6rem;
       background: $--gradient-secondary-light;
       right: -1rem;
       transform: translate(100%, -50%);
-      width: 30%;
     }
   }
 
@@ -585,12 +593,11 @@ section {
       content: "";
       position: absolute;
       top: 50%;
-      width: 30%;
+      width: 10%;
       border-radius: 1.2rem;
       height: 0.6rem;
       background: linear-gradient(90deg, #1b0e979f, $--color-secondary);
       transform: translate(-100%, -50%);
-      width: 30%;
       left: -1rem;
     }
   }
@@ -604,10 +611,12 @@ section {
   padding-top: 10vh;
 
   &__item {
-    margin-top: 4rem;
+    margin-top: 10rem;
     text-align: center;
+    @include flex-col-center();
     &-img {
-      height: 15rem;
+      height: auto;
+      width: 60%;
       margin-bottom: 2rem;
     }
     &-title {
@@ -765,15 +774,15 @@ section {
 
 // Responsive
 @media (min-width: 740px) {
-  .award {
-    &__item {
-      &-img {
-        height: 15rem;
-        margin-bottom: 4rem;
+  .home {
+    &__wrapper {
+      & .title img {
+        margin: -15rem 0 -10rem;
+        width: 100%;
       }
-      margin: 1rem 2rem;
     }
   }
+
   .organize {
     &__body {
       &-heading {
@@ -818,6 +827,7 @@ section {
     &__item {
       &-img {
         height: 25rem;
+        width: 100%;
       }
       margin: 0;
     }
@@ -856,16 +866,35 @@ section {
     }
   }
 }
-@media (min-width: 1024px) and (max-width: 1239px) {
-  .footer {
-  }
-}
+
 @media (min-width: 1240px) {
+  .heading {
+    margin-bottom: 4rem;
+    &__left,
+    &__center {
+      font-size: 3.6rem;
+      &::after {
+        width: 30%;
+      }
+    }
+    &__center {
+      &::before {
+        width: 30%;
+      }
+    }
+  }
   .home {
     &__wrapper {
       & .title img {
         margin: -15rem 0 -11rem;
         width: 60%;
+      }
+    }
+  }
+  .award {
+    &__item-img {
+      img {
+        object-fit: contain;
       }
     }
   }
@@ -905,14 +934,18 @@ section {
         display: block;
       }
       ul {
+        position: fixed;
+        top: 0;
+        right: 0;
         padding-top: 10vh;
         height: 100vh;
         display: none;
         align-items: flex-start;
         flex-direction: column;
         background-color: $--color-yellow;
-        width: 200px;
+        width: 30rem;
         padding-bottom: 65vh;
+        right: 0;
         li {
           .dropdown {
             display: none;
@@ -1016,7 +1049,7 @@ section {
         }
       }
     }
-    
+
     .btn-register {
       margin: 3vh auto 0;
       font-size: 1.5rem;
