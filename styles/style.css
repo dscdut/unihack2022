@@ -254,11 +254,6 @@ section {
   position: relative;
 }
 
-.header__nav ul li i {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
 .header__nav ul li .dropdown {
   display: none;
   position: absolute;
@@ -283,10 +278,6 @@ section {
 }
 
 .header__nav ul a:hover {
-  color: #dc8e35;
-}
-
-.header__nav ul a:hover ~ i {
   color: #dc8e35;
 }
 
@@ -457,7 +448,7 @@ section {
 
 .home__wrapper-countdown {
   width: 600px;
-  margin: 2vw auto 0;
+  margin: 2vw auto;
   border-radius: 2rem;
   font-size: 5rem;
 }
@@ -480,10 +471,10 @@ section {
   border: 0.3rem solid #3a93d1;
   border-radius: 100%;
   display: block;
-  width: 8rem;
-  height: 8rem;
+  width: 100px;
+  height: 100px;
   margin: 1rem 0.5rem;
-  padding: 1.6rem;
+  padding: 2.6rem;
 }
 
 .home__wrapper-countdown .remain-day .text {
@@ -722,6 +713,7 @@ section {
 
 .heading {
   margin-bottom: 4rem;
+  padding: 0 2rem;
 }
 
 .heading__left, .heading__center {
@@ -761,7 +753,7 @@ section {
 
 .coming-soon {
   height: 80vh;
-  font-size: 5.5rem;
+  font-size: 8.5rem;
 }
 
 .award {
@@ -882,6 +874,7 @@ section {
   margin-top: 2rem;
   font-size: 2.2rem;
   font-weight: 700;
+  padding: 0 2rem;
 }
 
 .organize__body-desc {
@@ -889,6 +882,7 @@ section {
   margin: 1rem 0;
   font-size: 1.4rem;
   color: #fff;
+  padding: 0 2rem;
 }
 
 .organize__body-footer {
@@ -903,7 +897,6 @@ section {
 
 .footer {
   padding: 0 0 5rem;
-  background: #180239;
 }
 
 .footer__title {
@@ -965,6 +958,13 @@ section {
   position: relative;
 }
 
+.footer__list-link span::after {
+  content: ":";
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
+}
+
 .footer__sponsors {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1021,27 +1021,9 @@ section {
   section {
     min-height: 100vh;
   }
-  .heading {
-    margin-bottom: 4rem;
-  }
-  .heading__left, .heading__center {
-    font-size: 3.6rem;
-  }
-  .heading__left::after, .heading__center::after {
-    width: 30%;
-  }
-  .heading__center::before {
-    width: 30%;
-  }
   .home__wrapper .title img {
-    margin: -8rem 0;
-    width: 50%;
-  }
-  .home__wrapper h3 {
-    font-size: 2.4rem;
-  }
-  .home__wrapper p {
-    font-size: 1.4rem;
+    margin: -5rem 0;
+    width: 60%;
   }
   .award__item {
     margin: 0;
@@ -1078,6 +1060,22 @@ section {
 }
 
 @media (min-width: 1240px) {
+  .heading {
+    margin-bottom: 4rem;
+  }
+  .heading__left, .heading__center {
+    font-size: 3.6rem;
+  }
+  .heading__left::after, .heading__center::after {
+    width: 30%;
+  }
+  .heading__center::before {
+    width: 30%;
+  }
+  .home__wrapper .title img {
+    margin: -15rem 0 -11rem;
+    width: 60%;
+  }
   .award__item-img img {
     -o-object-fit: contain;
        object-fit: contain;
@@ -1146,6 +1144,9 @@ section {
 }
 
 @media (max-width: 767.98px) {
+  .footer {
+    padding: 0 2rem;
+  }
   .timeline::after {
     left: 90px;
   }
