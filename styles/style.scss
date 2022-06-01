@@ -525,6 +525,7 @@ section {
     background: $--color-text;
     position: relative;
     border-radius: 0 500px 500px 0;
+
     h2 {
       margin: 0 0 10px 0;
       font-size: 1.8rem;
@@ -534,7 +535,7 @@ section {
     span {
       font-size: 1.4rem;
       color: $--color-primary;
-      display: inline-block;
+      display: block;
       margin-bottom: 1rem;
       font-weight: 500;
     }
@@ -761,7 +762,7 @@ section {
   }
   &__sponsors {
     & .logo-gdg {
-      width: 65%;
+      width: 75%;
       margin-left: 1rem;
     }
     display: flex;

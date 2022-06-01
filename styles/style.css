@@ -678,7 +678,7 @@ section {
 .container .content span {
   font-size: 1.4rem;
   color: #200343;
-  display: inline-block;
+  display: block;
   margin-bottom: 1rem;
   font-weight: 500;
 }
@@ -976,7 +976,7 @@ section {
 }
 
 .footer__sponsors .logo-gdg {
-  width: 65%;
+  width: 75%;
   margin-left: 1rem;
 }
 
