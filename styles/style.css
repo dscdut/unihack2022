@@ -713,7 +713,6 @@ section {
 
 .heading {
   margin-bottom: 4rem;
-  padding: 0 2rem;
 }
 
 .heading__left, .heading__center {
@@ -837,7 +836,7 @@ section {
 }
 
 .organize__item {
-  margin-top: 10rem;
+  margin-top: 4rem;
 }
 
 .organize__img {
@@ -994,7 +993,7 @@ section {
     width: 100%;
   }
   .organize__body-heading {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
   .organize__body-desc {
     font-size: 1.2rem;
