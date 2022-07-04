@@ -815,7 +815,7 @@ section {
 }
 
 .sponsor__name {
-  margin-top: 0.8rem;
+  margin-top: 0.8em;
   font-size: 1.4rem;
   color: #fff;
 }
@@ -832,7 +832,17 @@ section {
   width: 100%;
   height: 10rem;
   vertical-align: middle;
-  background-color: #fff;
+}
+
+.sponsor__img .sponsor__brozen {
+  height: 7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
+}
+
+.sponsor__img img {
+  height: auto;
 }
 
 .organize__item {
@@ -1005,7 +1015,7 @@ section {
             justify-content: flex-start;
   }
   .sponsor__name {
-    margin-top: 1.2rem;
+    margin-top: 0.4rem;
     font-size: 1.6rem;
   }
   .sponsor__item {
