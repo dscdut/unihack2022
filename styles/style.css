@@ -807,9 +807,9 @@ section {
 }
 
 .sponsor__type {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 700;
-  margin-bottom: -2.5rem;
+  margin-bottom: -2.9rem;
   text-align: center;
   color: #fff;
 }
@@ -818,6 +818,7 @@ section {
   margin-top: 0.8em;
   font-size: 1.4rem;
   color: #fff;
+  margin-bottom: 1.6rem;
 }
 
 .sponsor__row {

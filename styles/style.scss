@@ -641,9 +641,10 @@ section {
 .sponsor {
   flex-direction: column;
   &__type {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+
     font-weight: 700;
-    margin-bottom: -2.5rem;
+    margin-bottom: -2.9rem;
     text-align: center;
     color: $--color-text;
   }
@@ -651,6 +652,7 @@ section {
     margin-top: 0.8em;
     font-size: 1.4rem;
     color: $--color-text;
+    margin-bottom: 1.6rem;
   }
   &__row {
     margin-top: 5.6rem;
