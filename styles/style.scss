@@ -250,7 +250,7 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #000000ab;
+  background-color: #00000050;
   z-index: 998;
   opacity: 0;
   transition: all 0.5s ease;
@@ -261,6 +261,7 @@ section {
     opacity: 1;
   }
 }
+
 .modal {
   position: fixed;
   overflow-y: scroll;
@@ -272,10 +273,36 @@ section {
   transform: translate(-50%, -50%) scale(0);
   z-index: 999;
   padding: 1rem 2rem;
-  opacity: 0;
+  opacity: 1;
   visibility: hidden;
   transition: all 0.5s ease;
   background: $--gradient-primary;
+  &__tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-item {
+      border: none;
+      background-color: transparent;
+      font-size: 1.8rem;
+      margin-right: 25px;
+      display: inline-block;
+      color: #fff;
+      cursor: pointer;
+      padding: 0.8rem 0;
+      border-bottom: 2px solid transparent;
+      &.tab-active {
+        border-bottom: 2px solid $--color-secondary;
+      }
+    }
+  }
+  &__list {
+    li {
+      font-size: 2.4rem;
+      padding: 1rem 2rem;
+      display: block;
+    }
+  }
   &.active {
     visibility: visible;
     opacity: 1;
@@ -285,23 +312,143 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    h1 {
-      font-size: 3.6rem;
-      color: $--color-secondary;
-      font-weight: 700;
-    }
+
     &-close {
       display: inline-block;
       font-size: 4rem;
     }
   }
+  &__company-name {
+    font-size: 3.6rem;
+    text-align: center;
+    margin: 4rem 0;
+    color: $--color-secondary;
+    font-weight: 700;
+  }
   &__body {
-    margin-top: 4rem;
     p {
       letter-spacing: 1px;
       line-height: 1.5;
+    }
+    &-title {
+      display: inline-block;
+      margin-bottom: 2.4rem;
+      font-size: 3.2rem;
+    }
+    &-desc {
+      display: inline-block;
+      margin-top: 2rem;
+      font-size: 1.8rem;
+      a {
+        font-size: 2rem;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+    &-company-desc {
+      display: inline-block;
+      margin-top: 24px;
+      font-size: 16px;
+    }
+  }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.modal__body-company-desc {
+  p {
+    display: block;
+    padding: 1.4rem 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+    span {
+      font-weight: inherit;
+      display: block;
+      font-size: inherit;
+    }
+  }
+  ul {
+    list-style: armenian;
+    li {
+      padding: 1rem 2rem;
+      display: block;
       font-size: 1.4rem;
     }
+  }
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  height: 55vh;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
   }
 }
 .home {
@@ -659,6 +806,7 @@ section {
   }
   &__item {
     margin-top: 4.5rem;
+    cursor: pointer;
   }
 
   &__img {

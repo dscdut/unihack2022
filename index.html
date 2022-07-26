@@ -251,17 +251,53 @@
     <div class="overlay"></div>
     <div class="modal grid wide">
       <div class="modal__content">
+
         <div class="modal__header">
-
-          <h1>Chi tiết cơ cấu giải thưởng</h1>
-
+          <div class="modal__tab">
+            <button class="modal__tab-item tab-img tab-active">Thông tin</button>
+            <button class="modal__tab-item tab-career">Tuyển dụng</button>
+          </div>
           <button type="button" title="close" class="close-btn"></button>
-
         </div>
+        <h1 class="modal__company-name"></h1>
+
+
         <div class="modal__body">
-          <p>
-            Updating ...
-          </p>
+          <div class="slideshow-container modal-active">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img class="modal__slide-img-1"  style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img class="modal__slide-img-2"  style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img class="modal__slide-img-3"  style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 5</div>
+              <img class="modal__slide-img-4" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 5</div>
+              <img class="modal__slide-img-5" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <div class="modal__body-company-desc" style="display: block;">
+     
+          </div>
+          <div class="modal__body-career" style="display: none; ">
+
+          </div>
         </div>
       </div>
     </div>
@@ -277,9 +313,9 @@
     <div data-aos="fade-up" class="sponsor__row">
       <h3 class="sponsor__type">Bảo trợ chuyên môn</h3>
       <div class="row center">
-        <div class="col l-3 m-6 c-3 flex-col center sponsor__item">
+        <div data-sponsor="enouvo" class="col l-3 m-6 c-3 flex-col center sponsor__item">
           <div class="sponsor__img center">
-           
+
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px"
               height="60px" viewBox="0 0 200 60" version="1.1">
               <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
@@ -302,7 +338,7 @@
     <div data-aos="fade-up" class="sponsor__row">
       <h3 class="sponsor__type">Nhà tài trợ vàng</h3>
       <div class="row center">
-        <div class="col l-3 m-6 c-3 sponsor__item flex-col center">
+        <div data-sponsor="codegym" class="col l-3 m-6 c-3 sponsor__item flex-col center">
           <div class="sponsor__img center">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360px"
               height="78px" viewBox="0 0 360 78" version="1.1">
@@ -339,11 +375,11 @@
           <a href="https://codegym.vn/" class="sponsor__name" target="_blank">CodeGym</a>
         </div>
 
-        <div class="col l-3 m-6 c-3 sponsor__item flex-col center">
+        <div data-sponsor="mgm" class="col l-3 m-6 c-3 sponsor__item flex-col center">
           <div class="sponsor__img center">
-            <svg style="height: 65%; margin-top: 12px;"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-              id="Ebene_1" x="0px" y="0px" viewBox="0 0 601 215" style="enable-background:new 0 0 601 215;"
-              xml:space="preserve">
+            <svg style="height: 65%; margin-top: 12px;" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Ebene_1" x="0px" y="0px"
+              viewBox="0 0 601 215" style="enable-background:new 0 0 601 215;" xml:space="preserve">
               <style type="text/css">
                 .st0 {
                   display: none;
@@ -375,7 +411,7 @@
           </div>
           <a href="https://www.mgm-tp.com/" class="sponsor__name" target="_blank">mgm</a>
         </div>
-        <div class="col l-3 m-6 c-3 sponsor__item flex-col center">
+        <div data-sponsor="one-tech-stop" class="col l-3 m-6 c-3 sponsor__item flex-col center">
           <div class="sponsor__img center">
             <img style="width:85%" src="./assets/logo_one_tech_stop.png" alt="" />
           </div>
@@ -386,7 +422,7 @@
     <div data-aos="fade-up" class="sponsor__row">
       <h3 class="sponsor__type">Nhà tài trợ bạc</h3>
       <div class="row center">
-        <div class="col l-3 m-6 c-3 sponsor__item flex-col center">
+        <div data-sponsor="mti" class="col l-3 m-6 c-3 sponsor__item flex-col center">
           <div class="sponsor__img center">
             <svg xmlns="http://www.w3.org/2000/svg" width="1731.155" height="157.154" viewBox="0 0 1731.155 157.154">
               <g id="Group_1" data-name="Group 1" transform="translate(-281.75 -242.053)">
@@ -453,14 +489,14 @@
           <a href="https://mti-vietnam.vn/" class="sponsor__name" target="_blank">MTI Technology</a>
         </div>
 
-        <div class="col l-3 m-6 c-3 sponsor__item flex-col center">
+        <div data-sponsor="kms" class="col l-3 m-6 c-3 sponsor__item flex-col center">
           <div class="sponsor__img center">
             <img style="width:85%" src="https://kms-technology.com/wp-content/uploads/2022/03/logo-white.svg" alt="" />
           </div>
           <a href="https://kms-technology.com/" class="sponsor__name" target="_blank">KMS Technology</a>
         </div>
 
-        <div class="col l-3 m-6 c-3 sponsor__item flex-col center">
+        <div data-sponsor="paradox" class="col l-3 m-6 c-3 sponsor__item flex-col center">
           <div class="sponsor__img center">
             <img style="width:85%" src="./assets/logo-paradox-white-blue-01.png" alt="" />
           </div>
@@ -468,36 +504,34 @@
         </div>
       </div>
     </div>
-      <div data-aos="fade-up" class="sponsor__row">
+    <div data-aos="fade-up" class="sponsor__row">
       <h3 class="sponsor__type">Nhà tại trợ đồng</h3>
       <div class="row center">
-          <div class="col l-3 m-6 c-3 sponsor__item flex-col center">
+        <div data-sponsor="gear-inc" class="col l-3 m-6 c-3 sponsor__item flex-col center">
           <div class="sponsor__img  center">
-                       <img  style="width:80%" class="sponsor__brozen" src="./assets/gear_logo-1.png" alt="" />
+            <img style="width:80%" class="sponsor__brozen" src="./assets/gear_logo-1.png" alt="" />
 
           </div>
           <a href="https://puremoderation.com/" class="sponsor__name" target="_blank">Gear Inc</a>
         </div>
 
-        <div class="col l-3 m-6 c-3 sponsor__item flex-col center">
+        <div data-sponsor="enlab" class="col l-3 m-6 c-3 sponsor__item flex-col center">
           <div class="sponsor__img  center">
-            <img style="width:80%" class="sponsor__brozen" src="./assets/Enlab_Primary-Logo_Horizontal_On-Light@4x (1).png" alt="" />
+            <img style="width:80%" class="sponsor__brozen"
+              src="./assets/Enlab_Primary-Logo_Horizontal_On-Light@4x (1).png" alt="" />
           </div>
           <a href="https://enlabsoftware.com/" class="sponsor__name" target="_blank">Enlab Software</a>
         </div>
       </div>
-     
+
     </div>
     <div data-aos="fade-up" class="sponsor__row">
       <h3 class="sponsor__type">Nhà tài trợ học bổng</h3>
       <div class="row center">
-        <div class="col l-3 m-6 c-3 flex-col center sponsor__item">
+        <div data-sponsor="aptech" class="col l-3 m-6 c-3 flex-col center sponsor__item">
           <div class="sponsor__img center">
-           <img
-           class="sponsor__brozen"
-            src="./assets/Logo-Aptech-Sua.png"
-              alt="" />
-          
+            <img class="sponsor__brozen" src="./assets/Logo-Aptech-Sua.png" alt="" />
+
           </div>
           <a href="https://aptech-danang.edu.vn/" class="sponsor__name" target="_blank">Aptech</a>
         </div>
@@ -507,33 +541,30 @@
     <div data-aos="fade-up" class="sponsor__row">
       <h3 class="sponsor__type">Bảo trợ truyền thông</h3>
       <div class="row center">
-        <div class="col l-3 m-6 c-3 sponsor__item flex-col center">
-        <div class="sponsor__img  center">
-          <img  style="width:100%; padding: 6px 0" class="sponsor__brozen" src="./assets/ybox_logo_white.png" alt="" />
+        <div data-sponsor="ybox" class="col l-3 m-6 c-3 sponsor__item flex-col center">
+          <div class="sponsor__img  center">
+            <img style="width:100%; padding: 6px 0" class="sponsor__brozen" src="./assets/ybox_logo_white.png" alt="" />
 
+          </div>
+          <a href="https://ybox.vn/" class="sponsor__name" target="_blank">YBOX</a>
         </div>
-        <a href="https://ybox.vn/" class="sponsor__name" target="_blank">YBOX</a>
-      </div>
 
-      <div class="col l-3 m-6 c-3 sponsor__item flex-col center">
-        <div class="sponsor__img  center">
-          <img style="width:120%" class="sponsor__brozen" src="./assets/logo_ivolunteeer.png" alt="" />
+        <div data-sponsor="iVolunteer" class="col l-3 m-6 c-3 sponsor__item flex-col center">
+          <div class="sponsor__img  center">
+            <img style="width:120%" class="sponsor__brozen" src="./assets/logo_ivolunteeer.png" alt="" />
+          </div>
+          <a href="https://ivolunteervietnam.com/" class="sponsor__name" target="_blank">iVolunteer Vietnam</a>
         </div>
-        <a href="https://ivolunteervietnam.com/" class="sponsor__name" target="_blank">iVolunteer Vietnam</a>
       </div>
-    </div>
     </div>
 
     <div data-aos="fade-up" class="sponsor__row">
       <h3 class="sponsor__type">Nhà tài trợ F&B</h3>
       <div class="row center">
-        <div class="col l-3 m-6 c-3 flex-col center sponsor__item">
+        <div data-sponsor="bonpas" class="col l-3 m-6 c-3 flex-col center sponsor__item">
           <div class="sponsor__img center">
-           <img
-           class="sponsor__brozen"
-            src="./assets/bonpas.png"
-              alt="" />
-          
+            <img class="sponsor__brozen" src="./assets/bonpas.png" alt="" />
+
           </div>
           <a href="http://bonpasbakery.com/" class="sponsor__name" target="_blank">Bonpas</a>
         </div>
@@ -543,19 +574,16 @@
     <div data-aos="fade-up" class="sponsor__row">
       <h3 class="sponsor__type">Đối tác truyền thông</h3>
       <div class="row center">
-        <div class="col l-3 m-6 c-3 flex-col center sponsor__item">
+        <div data-sponsor="hugo-english" class="col l-3 m-6 c-3 flex-col center sponsor__item">
           <div class="sponsor__img center">
-           <img
-           class="sponsor__brozen"
-            src="./assets/hugo_white.png"
-              alt="" />
-          
+            <img class="sponsor__brozen" src="./assets/hugo_white.png" alt="" />
+
           </div>
           <a href="#" class="sponsor__name" target="_blank">Hugo English Club</a>
         </div>
       </div>
     </div>
-   
+
 
     </div>
   </section>
