@@ -304,16 +304,9 @@ section {
   border-bottom: 2px solid #3a93d1;
 }
 .modal__list li {
-  font-size: 1.8rem;
-  padding: 0.6rem 2rem;
+  font-size: 2.4rem;
+  padding: 1rem 2rem;
   display: block;
-}
-.modal__list li a {
-  font-size: inherit;
-  font-weight: 500;
-}
-.modal__list li a:hover {
-  color: #3a93d1;
 }
 .modal.active {
   visibility: visible;
@@ -343,7 +336,7 @@ section {
 .modal__body-title {
   display: inline-block;
   margin-bottom: 2.4rem;
-  font-size: 2.4rem;
+  font-size: 3.2rem;
 }
 .modal__body-desc {
   display: inline-block;
@@ -351,11 +344,9 @@ section {
   font-size: 1.8rem;
 }
 .modal__body-desc a {
-  font-size: inherit;
-  font-weight: 500;
-}
-.modal__body-desc a:hover {
-  color: #3a93d1;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
 }
 .modal__body-company-desc {
   display: inline-block;
@@ -377,10 +368,9 @@ section {
   font-weight: 400;
 }
 .modal__body-company-desc p span {
-  font-weight: 600;
+  font-weight: inherit;
   display: block;
   font-size: inherit;
-  padding: 0.6rem 0;
 }
 .modal__body-company-desc ul {
   list-style: armenian;
@@ -389,13 +379,6 @@ section {
   padding: 1rem 2rem;
   display: block;
   font-size: 1.4rem;
-}
-.modal__body-company-desc ul li a {
-  font-size: inherit;
-  font-weight: 500;
-}
-.modal__body-company-desc ul li a:hover {
-  color: #3a93d1;
 }
 
 /* Hide the images by default */
