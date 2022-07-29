@@ -298,9 +298,16 @@ section {
   }
   &__list {
     li {
-      font-size: 2.4rem;
-      padding: 1rem 2rem;
+      font-size: 1.8rem;
+      padding: 0.6rem 2rem;
       display: block;
+      a {
+        font-size: inherit;
+        font-weight: 500;
+        &:hover {
+          color: $--color-secondary;
+        }
+      }
     }
   }
   &.active {
@@ -333,16 +340,18 @@ section {
     &-title {
       display: inline-block;
       margin-bottom: 2.4rem;
-      font-size: 3.2rem;
+      font-size: 2.4rem;
     }
     &-desc {
       display: inline-block;
       margin-top: 2rem;
       font-size: 1.8rem;
       a {
-        font-size: 2rem;
-        font-weight: 700;
-        cursor: pointer;
+        font-size: inherit;
+        font-weight: 500;
+        &:hover {
+          color: $--color-secondary;
+        }
       }
     }
     &-company-desc {
@@ -366,9 +375,10 @@ section {
     font-size: 1.4rem;
     font-weight: 400;
     span {
-      font-weight: inherit;
+      font-weight: 600;
       display: block;
       font-size: inherit;
+      padding: 0.6rem 0;
     }
   }
   ul {
@@ -377,6 +387,13 @@ section {
       padding: 1rem 2rem;
       display: block;
       font-size: 1.4rem;
+      a {
+        font-size: inherit;
+        font-weight: 500;
+        &:hover {
+          color: $--color-secondary;
+        }
+      }
     }
   }
 }
