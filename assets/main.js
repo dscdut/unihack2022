@@ -499,11 +499,11 @@ Văn phòng Đà Nẵng: Tầng 2-3, 460 Nguyễn Hữu Thọ, TP. Đà Nẵng
   "gear-inc": {
     name: "Công ty TNHH Gear Inc Việt Nam (Gear Inc)",
     imgs: [
-      "./assets/_/1.jpg",
-      "./assets/_/2.jpg",
-      "./assets/_/3.jpg",
-      "./assets/_/1.jpg",
-      "./assets/_/2.jpg",
+      "./assets/gearinc/1.jpg",
+      "./assets/gearinc/2.jpg",
+      "./assets/gearinc/3.jpg",
+      "./assets/gearinc/1.jpg",
+      "./assets/gearinc/2.jpg",
     ],
     career: `
     <span class="modal__body-desc">TRẢI NGHIỆM VỪA LÀM GAME VỪA CHƠI GAME CÙNG PS5 VÀ KÍNH VR, BẠN ĐÃ THỬ CHƯA?</span>
@@ -623,11 +623,11 @@ Mọi thông tin chi tiết về Enlab Software được cập nhật tại:</p>
   aptech: {
     name: "Công ty cổ phần Softech - Chi nhánh Đà Nẵng",
     imgs: [
-      "./assets/_/1.png",
-      "./assets/_/2.png",
-      "./assets/_/3.png",
-      "./assets/_/4.png",
-      "./assets/_/2.png",
+      "./assets/aptech/1.jpg",
+      "./assets/aptech/2.jpg",
+      "./assets/aptech/3.jpg",
+      "./assets/aptech/4.jpg",
+      "./assets/aptech/5.jpg",
     ],
     info: `
     <p>Hệ thống đào tạo Lập trình viên Quốc tế Softech Aptech ra đời từ năm 2001 trên cơ sở hợp tác giữa tập đoàn đào tạo Công nghệ thông tin hàng đầu thế giới Aptech Ấn Độ và Công ty Cổ phần Công nghệ Phần mềm Đà Nẵng (Softech).</p>
